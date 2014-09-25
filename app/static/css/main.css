@@ -1,0 +1,46 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+* {
+	font-family: nanumgothiccoding, Arial;
+	word-spacing: -1px;
+}
+
+
+body { 
+	background: url('http://i.imgur.com/t9kPCGR.jpg') no-repeat center center fixed; 
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+
+html {
+	height: 100%;
+	width: 100%;
+}
+
+
+#searcher_1 {
+	width: 20%;
+	position: absolute;
+	top: 67%;
+	left: 25%;
+}
+
+
+#searcher_2 {
+	width: 20%;
+	position: absolute;
+	top: 67%;
+	left: 46%;
+}
+
+
+#button {
+	position: absolute;
+	top: 67%;
+	left: 67%;
+}

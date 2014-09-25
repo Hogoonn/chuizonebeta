@@ -1,0 +1,21 @@
+/* Add here all your CSS customizations */
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+* {
+	font-family: nanumgothiccoding, Arial;
+	word-spacing: -1px;
+}
+
+.contents-position {
+	margin-top: 10%;
+}
+
+#carousel-example-generic {
+	border: 2px solid #ff9f4a;
+}
+
+.tab-pane > p {
+	font-size: 15px;
+}

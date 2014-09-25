@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Main Page</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+ 	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<link href="/static/css/main.css" rel="stylesheet">
+	<script type="text/javascript" src="/static/js/main.js"></script>
+	<style type="text/css"></style>
+</head>
+
+<body>
+	<!-- navigator start -->
+	<div class="nav">
+	</div>
+	<!-- navigator end -->
+
+
+	<!-- searcher start -->
+	<form role="form" method="GET" action="{{url_for('mapnlist')}}">
+		<select class="form-control" name="searcher_1" id="searcher_1">
+			<option value="all">지역을 선택하세요</option>
+			<option value="all">전체</option>
+			<option value="kng">강남구</option>
+			<option value="kdg">강동구</option>
+			<option value="kbg">강북구</option>
+			<option value="ksg">강서구</option>
+			<option value="kag">관악구</option>
+			<option value="kjg">광진구</option>
+			<option value="krg">구로구</option>
+			<option value="kcg">금천구</option>
+			<option value="nwg">노원구</option>
+			<option value="dbg">도봉구</option>
+			<option value="ddmg">동대문구</option>
+			<option value="djg">동작구</option>
+			<option value="mpg">마포구</option>
+			<option value="sdmg">서대문구</option>
+			<option value="scg">서초구</option>
+			<option value="sdg">성동구</option>
+			<option value="sbg">성북구</option>
+			<option value="spg">송파구</option>
+			<option value="ycg">양천구</option>
+			<option value="ydpg">영등포구</option>
+			<option value="ysg">용산구</option>
+			<option value="epg">은평구</option>
+			<option value="jrg">종로구</option>
+			<option value="jg">중구</option>
+			<option value="jlg">중랑구</option>
+		</select>
+
+		<select class="form-control" name="searcher_2" id="searcher_2">
+			<option value="all">취미를 선택하세요</option>
+			<option value="all">전체</option>
+			<option value="craft">공예</option>
+			<option value="art">미술</option>
+			<option value="sport">스포츠</option>
+			<option value="cooking">요리</option>
+			<option value="music">음악</option>
+			<option value="flower">플라워</option>
+		</select>
+		<input type="submit" class="btn btn-default" id="button">
+	</input>
+</form>
+<!-- searcher end -->
+</body>
+
+</html>

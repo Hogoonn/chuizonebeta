@@ -1,0 +1,191 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+* {
+	font-family: nanumgothiccoding, Arial;
+	word-spacing: -1px;
+}
+
+/*nav start*/
+.nav {
+	background-color: #f1f1f1;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #c8c8c8;
+}
+
+.nav p {
+	font-size: 25px;
+	font-weight: bold;
+	color: #ff6666;
+	padding-top: 3%;
+}
+/*nav end*/
+
+
+/*carousel start*/
+.carousel-inner img {
+	width:100%;
+	max-height: 420px;
+}
+/*carousel end*/
+
+
+/*summary start*/
+#summary-teacher {
+	padding-top: 3%;
+}
+
+#summary-teacher p {
+	padding-top: 3%;
+	font-size: 15px;
+	color: #888888;
+}
+
+#summary-academy {
+	padding-top: 3%;
+}
+
+#summary-academy h1 {
+	font-weight: bolder;
+}
+
+#summary-category p {
+	background-color: #ff6666;
+	color: #ffffff;
+	margin-top: 15%;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#summary-location p {
+	background-color: #ff6666;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+	font-style: italic;
+}
+
+#summary-page p {
+	background-color: #ff6666;
+	color: #ffffff;
+	font-size: 20px;
+	font-weight: bold;
+}
+/*summary end*/
+
+/*introduce background*/
+.introbox {
+	width:100%;
+	height:100%;
+	background-color: #f1f1f1;
+	border-top: 1px solid #c8c8c8;
+}
+/*introduce background*/
+
+
+/*academy introduce start*/
+.col-md-7 h3 {
+	font-weight: bolder;
+	font-size: 20px;
+	color:#ff6666;
+}
+#academy-introduce {
+	width: 100%;
+	height: 100%;
+	background-color: #dadada;
+	padding: 3% 3% 3% 3%;
+	border: 1px solid #c8c8c8;
+	font-size: 14px;
+}
+
+#academy-introduce-img {
+	width: 100%;
+	max-height: 300px;
+	padding-top: 15%;
+}
+/*academy introduce end*/
+
+
+/*teacher introduce start*/
+.col-md-7 h3 {
+	font-weight: bolder;
+	font-size: 20px;
+	color:#ff6666;
+}
+
+#teacher-introduce {
+	width: 100%;
+	height: 100%;
+	background-color: #dadada;
+	padding: 3% 3% 3% 3%;
+	border: 1px solid #c8c8c8;
+	font-size: 14px;
+}
+
+.col-md-4 h3 {
+	font-weight: bolder;
+	font-style: italic;
+	font-size: 20px;
+	color:#ff6666;
+	opacity: 0.7;
+}
+
+#mini-interview {
+	width: 100%;
+	height: 100%;
+	background-color: #dadada;
+	padding: 3% 3% 3% 3%;
+	border: 1px solid #c8c8c8;
+	font-size: 14px;
+}
+
+#mini-interview span {
+	font-weight: bold;
+}
+/*teacher introduce end*/
+
+/*curriculum introduce start*/
+.col-md-7 h3 {
+	font-weight: bolder;
+	font-size: 20px;
+	color:#ff6666;
+}
+
+#curriculum-introduce {
+	width: 100%;
+	height: 100%;
+	background-color: #dadada;
+	padding: 3% 3% 3% 3%;
+	border: 1px solid #c8c8c8;
+	font-size: 14px;
+}
+/*curriculum introduce end*/
+
+/*detail introuce start*/
+#detail-title {
+	font-size: 17px;
+	font-weight: bold;
+	color: #696969;
+	padding-left: 5%;
+	font-style: italic;
+}
+
+#detail-contents {
+	font-size: 15px;
+	color: #696969;
+	padding-left: 5%;
+}
+
+hr {
+	border-color: #ff6666;
+	opacity: 0.4;
+	border-style:  dashed;
+}
+
+#detail {
+	padding-bottom: 2%;
+}
+/*detail introuce end*/

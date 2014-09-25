@@ -1,0 +1,15 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+* {
+	font-family: nanumgothiccoding, Arial;
+	word-spacing: -1px;
+}
+
+p {
+	display: inline-block;
+	font-size: 20px;
+	font-weight: bold;
+	padding-left: 3%;
+}
