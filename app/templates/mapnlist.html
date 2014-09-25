@@ -73,8 +73,15 @@
 			var map = new daum.maps.Map(mapContainer, mapOption);
 
 			$.getJSON('/mapdata', function(resp) {
-				var academy_data  = resp.data;
-				alert("Success and JSON Data: " + academy_data);		
+				var location_data = resp.data;
+				var positions = [];
+				for(var i in location_data){
+					var academy_data = location_data[i]
+					title = academy_data.academy_name
+					latlng = academy_data.academy_latlng
+					positions.push(title,latlng);
+				}				
+				alert("Success and JSON Data: " + positions);
 			});
 
 			
