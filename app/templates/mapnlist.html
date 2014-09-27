@@ -84,7 +84,7 @@
 			var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
 				mapOption = {
 					center: position, // 지도의 중심좌표
-					level: 4 // 지도의 확대 레벨
+					level: 3 // 지도의 확대 레벨
 				};
 
 			var map = new daum.maps.Map(mapContainer, mapOption);
@@ -128,6 +128,34 @@
 
 					};	 
 
+					// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+					var content = '<div class="customoverlay">' +
+					'  <a href="http://chuizonebeta.appspot.com/" target="_blank">' +
+					'    <span class="title">' + 
+					marker_title + 
+					'</span>' +
+					'  </a>' +
+					'</div>';
+
+					// 커스텀 오버레이를 생성합니다
+					var customOverlay = new daum.maps.CustomOverlay({
+						position: marker_point,
+						content: content,
+						yAnchor: 0 
+					});
+
+					// 마커에 마우스오버 이벤트를 등록합니다
+					daum.maps.event.addListener(marker, 'mouseover', function() {
+						// 마커에 마우스오버 이벤트가 발생하면 인포윈도우를 마커위에 표시합니다
+						customOverlay.setMap(map);
+					});
+
+					// 마커에 마우스아웃 이벤트를 등록합니다
+					daum.maps.event.addListener(marker, 'mouseout', function() {
+						// 마커에 마우스아웃 이벤트가 발생하면 인포윈도우를 제거합니다
+						customOverlay.setMap(null);
+					});	
+
 					// function addMarker(points){
 					// 	for (var i = 0; i < points.length; i++){
 					// 		var imageSrc = "http://i1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
@@ -154,77 +182,6 @@
 					console.log('invalid response!. Server error!');
 				} 
 			});
-
-			// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
-			var content = '<div class="customoverlay">' +
-			'  <a href="http://chuizonebeta.appspot.com/" target="_blank">' +
-			'    <span class="title">' + 
-			marker_title + 
-			'</span>' +
-			'  </a>' +
-			'</div>';
-
-			// 커스텀 오버레이를 생성합니다
-			var customOverlay = new daum.maps.CustomOverlay({
-				position: marker_point,
-				content: content,
-				yAnchor: 0 
-			});
-
-			// 마커에 마우스오버 이벤트를 등록합니다
-			daum.maps.event.addListener(marker, 'mouseover', function() {
-				// 마커에 마우스오버 이벤트가 발생하면 인포윈도우를 마커위에 표시합니다
-				customOverlay.setMap(map);
-			});
-
-			// 마커에 마우스아웃 이벤트를 등록합니다
-			daum.maps.event.addListener(marker, 'mouseout', function() {
-				// 마커에 마우스아웃 이벤트가 발생하면 인포윈도우를 제거합니다
-				customOverlay.setMap(null);
-			});	
-
-			// var content = '<div class="overlaybox">' +
-			// 		'    <div class="boxtitle">추천 학원 정보</div>' +
-			// 		'    <div class="first">' +
-			// 		'        <div class="triangle text">1</div>' +
-			// 		'        <div class="academytitle text">LHOOQ</div>' +
-			// 		'    </div>' +
-			// 		'    <ul>' +
-			// 		'        <li class="up">' +
-			// 		'            <span class="number">2</span>' +
-			// 		'            <span class="title">Sarah garden</span>' +
-			// 		'            <span class="arrow up"></span>' +
-			// 		'            <span class="count">2</span>' +
-			// 		'        </li>' +
-			// 		'        <li>' +
-			// 		'            <span class="number">3</span>' +
-			// 		'            <span class="title">Leather Craft</span>' +
-			// 		'            <span class="arrow up"></span>' +
-			// 		'            <span class="count">6</span>' +
-			// 		'        </li>' +
-			// 		'        <li>' +
-			// 		'            <span class="number">4</span>' +
-			// 		'            <span class="title">My Kitchen</span>' +
-			// 		'            <span class="arrow up"></span>' +
-			// 		'            <span class="count">3</span>' +
-			// 		'        </li>' +
-			// 		'        <li>' +
-			// 		'            <span class="number">5</span>' +
-			// 		'            <span class="title">Chuizone Piano</span>' +
-			// 		'            <span class="arrow down"></span>' +
-			// 		'            <span class="count">1</span>' +
-			// 		'        </li>' +
-			// 		'    </ul>' +
-			// 		'</div>';
-
-			// var customOverlay = new daum.maps.CustomOverlay({
-			// 	position: position,
-			// 	content: content,
-			// 	xAnchor: -0.1,
-			// 	yAnchor: 0
-			// });
-
-			// customOverlay.setMap(map);	
 		});
 	});	
 
@@ -348,13 +305,15 @@
 				<br />
 				<div class="row">
 					<ul class="portfolio-list sort-destination" data-sort-id="portfolio">
-						<li class="col-sm-6 col-xs-12 isotope-item websites">
+						{% if context.academy_list %}
+						{% for academy in context.academy_list %}
+						<li class="col-sm-6 col-xs-12 isotope-item websites" id="academy_{{academy.id}}">
 							<div class="portfolio-item img-thumbnail">
-								<a href="#" class="thumb-info">
+								<a href="{{ url_for('academy_detail', id= academy.id) }}" class="thumb-info">
 									<img alt="" class="img-responsive" src="static/img/lhooq_0.jpg">
 									<span class="thumb-info-title">
-										<span class="thumb-info-inner">LHOOQ</span>
-										<span class="thumb-info-type">Art</span>
+										<span class="thumb-info-inner">{{ academy.academy_name }}</span>
+										<span class="thumb-info-type">{{ academy.category }}</span>
 									</span>
 									<span class="thumb-info-action">
 										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-star"></i></span>
@@ -362,50 +321,19 @@
 								</a>
 							</div>
 						</li>
-						<li class="col-sm-6 col-xs-12 isotope-item websites">
-							<div class="portfolio-item img-thumbnail">
-								<a href="#" class="thumb-info">
-									<img alt="" class="img-responsive" src="static/img/lhooq_0.jpg">
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">LHOOQ</span>
-										<span class="thumb-info-type">Art</span>
-									</span>
-									<span class="thumb-info-action">
-										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-star"></i></span>
-									</span>
-								</a>
-							</div>
-						</li>
-						<li class="col-sm-6 col-xs-12 isotope-item websites">
-							<div class="portfolio-item img-thumbnail">
-								<a href="#" class="thumb-info">
-									<img alt="" class="img-responsive" src="static/img/lhooq_0.jpg">
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">LHOOQ</span>
-										<span class="thumb-info-type">Art</span>
-									</span>
-									<span class="thumb-info-action">
-										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-star"></i></span>
-									</span>
-								</a>
-							</div>
-						</li>
-						<li class="col-sm-6 col-xs-12 isotope-item websites">
-							<div class="portfolio-item img-thumbnail">
-								<a href="#" class="thumb-info">
-									<img alt="" class="img-responsive" src="static/img/lhooq_0.jpg">
-									<span class="thumb-info-title">
-										<span class="thumb-info-inner">LHOOQ</span>
-										<span class="thumb-info-type">Art</span>
-									</span>
-									<span class="thumb-info-action">
-										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-star"></i></span>
-									</span>
-								</a>
-							</div>
-						</li>
+						{% endfor %}
+						<div class="row">
+							<div class = "col-md-12" id = "more_data"></div>
+							<div class = "col-md-12" style = "align:center"><button class = "btn btn-default" id = "more_btn"> 더 보기 </button></div>
+						</div>
+						{% else %}
+						<div class="no-list">
+							등록된 취미 학원이 없습니다. 
+						</div>
+						{% endif %}						
 					</ul>
-				</div>
+				</div>										
+
 			</div>
 		</div>
 		<!-- list end -->

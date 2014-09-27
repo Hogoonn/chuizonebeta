@@ -19,9 +19,11 @@ def main():
 def map():
 	return render_template('map.html')
 
-@app.route('/mapnlist')
+@app.route('/mapnlist', methods = ['GET'])
 def mapnlist():
-	return render_template('mapnlist.html')
+	context = {}
+	context['academy_list'] = db.session.query(Academy).order_by(desc(Academy.id)).limit(4)
+	return render_template('mapnlist.html', context = context, active_tab = 'academy_list')
 
 @app.route('/mapdata')
 def mapdata():
