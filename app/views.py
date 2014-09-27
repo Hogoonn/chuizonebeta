@@ -26,13 +26,18 @@ def mapnlist():
 	category = request.args.get('search_2')
 
 	context['academy_list'] = db.session.query(Academy).order_by(desc(Academy.id)).limit(6)
-	return render_template('mapnlist.html', context = context, active_tab = 'academy_list')
+	return render_template('mapnlist.html', context = context)
 
 @app.route('/ajax/more_academy')
-def more_article():
+def more_academy():
 	current_row = int(request.args.get('current_row'))
-	row = int(request.args.get('count'))
-	more_data = db.session.query(Academy).order_by(desc(Academy.id))[current_row: current_row + 4]
+	category = str(request.args.get('category'))
+	if category == "all":
+		more_data = db.session.query(Academy).order_by(desc(Academy.id))[current_row: current_row + 6]
+
+	else:
+		more_data = db.session.query(Academy).filter(Academy.category == category).all()
+		# query.filter(and_(User.name == 'ed', User.fullname == 'Ed Jones'))
 	resp = {}
 	resp["data"] = []
 	temp = {}
@@ -64,7 +69,8 @@ def more_article():
 		resp["data"].append(temp)
 		temp = {}
 		
-	return jsonify(resp)	
+	return jsonify(resp)		
+
 
 @app.route('/mapdata')
 def mapdata():
@@ -159,32 +165,3 @@ def academy_detail():
 def academy_test_2():
 	
 	return render_template('academy_test_2.html')
-
-	# resp = {}
-	# resp["data"] = []
-	# temp = {}
-
-	# for academy in more_data:
-	# 	temp['id'] = academy.id
-	# 	temp['location'] = academy.location
-	# 	temp['academy_name'] = academy.academy_name
-	# 	temp['teacher_name'] = academy.teacher_name
-	# 	temp['academy_introduce'] = academy.academy_introduce
-	# 	temp['teacher_introduce'] = academy.teacher_introduce
-	# 	temp['curriculum_introduce'] = academy.curriculum_introduce
-	# 	temp['academy_address'] = academy.academy_address
-	# 	temp['academy_latlng'] = academy.academy_latlng
-	# 	temp['welcome_line'] = academy.welcome_line		
-	# 	temp['phone_number'] = academy.phone_number
-	# 	temp['class_time'] = academy.class_time
-	# 	temp['class_fee'] = academy.class_fee		
-	# 	temp['homepage'] = academy.homepage
-	# 	temp['image_1'] = academy.image_1
-	# 	temp['image_2'] = academy.image_2
-	# 	temp['image_3'] = academy.image_3
-	# 	temp['image_4'] = academy.image_4
-	# 	temp['image_5'] = academy.image_5
-	# 	temp['teacher_image'] = academy.teacher_image
-
-	# 	resp["data"].append(temp)
-	# 	temp = {}

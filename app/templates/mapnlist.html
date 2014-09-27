@@ -45,40 +45,7 @@
 	<script type="text/javascript">
 	
 	$(document).ready(function(){
-
-		// academy data appending	
-		var current_row = 6;
-		var count = 0;
-
-		$('#more_btn').click(function(){
-			$.ajax({
-				url : "/ajax/more_academy",
-				dataType : "json",
-				data : {
-					current_row : current_row,
-					count : count
-				},
-				success : function(resp){
-					current_row += 6;
-					more_academy_list = resp.data;
-					for(var i in more_academy_list){
-						academy = more_academy_list[i];
-						string =
-						"<li class='col-md-4 col-sm-6 col-xs-12 isotope-item websites' id='academy_"+ academy.id
-						+ "'><div class='portfolio-item img-thumbnail'><button class='thumb-info' value='"+ academy.id
-						+ "' data-toggle='modal' data-target='#myModal'><img alt='' class='img-responsive' src='"+ academy.image_1
-						+ "'><span class='thumb-info-title'><span class='thumb-info-inner'>"+ academy.academy_name
-						+ "</span><span class='thumb-info-type'>"+ academy.category
-						+ "</span></span><span class='thumb-info-action'><span title='Universal' class='thumb-info-action-icon'><i class='fa fa-star'></i></span></span></button></div></li>";
-						$("#more_data").append(string);
-					}
-				},
-				error : function(resp){
-					console.log('invalid response!. Server error!');
-				}	
-			})
-		});
-
+		
 		// daum map API start
 		var position_default = new daum.maps.LatLng(37.500142,127.036498);
 		
@@ -95,8 +62,8 @@
 
 		// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
 		var content = '<div class="customoverlay">' +
-		'  <a href="http://chuizonebeta.appspot.com/" target="_blank">' +
-		'    <span class="title">HELLO GOOGLERS~!!<br>지역과 취미를 선택하세요</span>' +
+		'  <a href="http://chuizonebeta.appspot.com/mapnlist">' +
+		'    <span class="title"><h3>HELLO GOOGLERS~♥</h3>지역과 취미를 선택하세요</span>' +
 		'  </a>' +
 		'</div>';
 
@@ -107,6 +74,69 @@
 			yAnchor: 1 
 		});						
 		customOverlay.setMap(map);	
+
+		// academy data appending	
+		var current_row = 6;
+
+		$('#more_btn').click(function(){
+			$.ajax({
+				url : "/ajax/more_academy",
+				dataType : "json",
+				data : {
+					current_row : current_row,
+					category : "all"
+				},
+				success : function(resp){
+					current_row += 6;
+					more_academy_list = resp.data;
+					for(var i = 0; i < more_academy_list.length; i ++){
+						academy = more_academy_list[i];
+						string =
+						"<li class='col-md-4 col-sm-6 col-xs-12 isotope-item websites' id='academy_"+ academy.id
+						+ "'><div class='portfolio-item img-thumbnail'><button class='thumb-info' value='academy_"+ academy.id
+						+ "' data-toggle='modal' data-target='#myModal'><img alt='' class='img-responsive' src='"+ academy.image_1
+						+ "'><span class='thumb-info-title'><span class='thumb-info-inner'>"+ academy.academy_name
+						+ "</span><span class='thumb-info-type'>"+ academy.category
+						+ "</span></span><span class='thumb-info-action'><span title='Universal' class='thumb-info-action-icon'><i class='fa fa-star'></i></span></span></button></div></li>";
+						$("#more_data").prepend(string);
+					}
+				},
+				error : function(resp){
+					console.log('invalid response!. Server error!');
+				}	
+			})
+		});
+
+		$('#searcher_2').change(function(){
+			var category = $(this).val();
+			console.log(category);
+			$.ajax({
+				url : "/ajax/more_academy",
+				dataType : "json",
+				data : {
+					current_row : current_row,
+					category : category
+				},
+				success : function(resp){
+					current_row += 6;
+					more_academy_list = resp.data;
+					for(var i = 0; i < more_academy_list.length; i ++){
+						academy = more_academy_list[i];
+						string =
+						"<li class='col-md-4 col-sm-6 col-xs-12 isotope-item websites' id='academy_"+ academy.id
+						+ "'><div class='portfolio-item img-thumbnail'><button class='thumb-info' value='academy_"+ academy.id
+						+ "' data-toggle='modal' data-target='#myModal'><img alt='' class='img-responsive' src='"+ academy.image_1
+						+ "'><span class='thumb-info-title'><span class='thumb-info-inner'>"+ academy.academy_name
+						+ "</span><span class='thumb-info-type'>"+ academy.category
+						+ "</span></span><span class='thumb-info-action'><span title='Universal' class='thumb-info-action-icon'><i class='fa fa-star'></i></span></span></button></div></li>";
+						$("#more_data").prepend(string);
+					}
+				},
+				error : function(resp){
+					console.log('invalid response!. Server error!');
+				}	
+			})
+		});
 
 		$("#searcher_1").change(function() {
 			var gu_latlng = $(this).val().split(",");
@@ -204,11 +234,11 @@
 				}	
 			});
 		});
-
-		// $('#myModal').on('hidden.bs.modal', function () {
-		// 	$(this).data('bs.modal', null);
-		// 	console.log('reset modal!!');
-		// });	
+      
+		$('body').on('hidden.bs.modal', '.modal', function () {
+			$(".modal-dialog").remove();
+			console.log('reset modal')
+		});
 	});	
 
 </script>
@@ -304,7 +334,7 @@
 									</select>
 								</div>
 								<div class="col-md-2 col-sm-2 col-xs-2">
-									<input type="submit" class="btn btn-default" id="button" value="취미 찾기"></input>
+									<input type="submit" class="btn btn-default" id="button" value="초기화"></input>
 								</div>								
 							</form>
 							<div class="col-md-1 col-sm-1 col-xs-2">
