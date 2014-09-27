@@ -142,7 +142,7 @@ def academy_create():
 def academy_detail(id):
 	academy = Academy.query.get(id)
 
-	return render_template('academy_test.html', academy=academy)
+	return render_template('academy.html', academy=academy)
 
 
 @app.route('/academy_test_2')

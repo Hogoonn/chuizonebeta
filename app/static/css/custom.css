@@ -9,26 +9,11 @@
 }
 
 .nav {
-	background-color: #f1f1f1;
 	width: 100%;
-	height: 50px;
-	border-bottom: 1px solid #c8c8c8;
-}
-
-.nav p {
-	font-size: 25px;
-	font-weight: bold;
-	color: #ff6666;
-	padding-top: 7px;
 }
 
 .contents-position {
 	margin-top: 5%;
-}
-
-#main-name h2 {
-	margin-left: 2%;
-	color: #ff9f4a;
 }
 
 #carousel-example-generic {
@@ -43,4 +28,18 @@
 	height: 325px;
 	overflow-x: hidden;
 	overflow-y: auto;
+}
+
+.modal-dialog {
+	width: 90%;
+	height: 20%;
+	margin: 0%;
+	position: absolute;
+	top: 5%;
+	left: 5%;
+}
+
+.btn-primary {
+	background-color: #ff9f4a;
+	border-color: #fd8419;
 }
