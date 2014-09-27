@@ -87,7 +87,7 @@ body.dark .pagination > .active > span:focus {
 .btn-primary,
 .pagination > .active > a,
 body.dark .pagination > .active > a {
-	border-color: #0088cc !important;
+	border-color: #ff9f4a !important;
 	color: #ffffff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	background-color: #0088cc;
@@ -97,8 +97,8 @@ body.dark .pagination > .active > a {
 .btn-primary:hover,
 .pagination > .active > a:hover,
 body.dark .pagination > .active > a:hover {
-	border-color: #0099e6;
-	background-color: #0099e6;
+	border-color: #fd8419;
+	background-color: #fd8419;
 }
 
 .btn-primary:active,
@@ -107,8 +107,8 @@ body.dark .pagination > .active > a:active,
 .btn-primary:focus,
 .pagination > .active > a:focus,
 body.dark .pagination > .active > a:focus {
-	border-color: #0077b3;
-	background-color: #0077b3;
+	border-color: #fd8419;
+	background-color: #fd8419;
 }
 
 .progress-bar-primary {
