@@ -29,6 +29,12 @@
 	.overlaybox li:hover {color:#fff;background:#d24545;}
 	.overlaybox li:hover .up {background-position:0 0px;}
 	.overlaybox li:hover .down {background-position:0 -20px;}
+
+	.customoverlay {position:relative;bottom:85px;border-radius:6px;border: 1px solid #ccc;border-bottom:2px solid #ddd;float:left;}
+	.customoverlay:nth-of-type(n) {border:0; box-shadow:0px 1px 2px #888;}
+	.customoverlay a {display:block;text-decoration:none;color:#000;text-align:center;border-radius:6px;font-size:14px;font-weight:bold;overflow:hidden;background: #d95050;background: #d95050 url(http://i1.daumcdn.net/localimg/localimages/07/mapapidoc/arrow_white.png) no-repeat right 14px center;}
+	.customoverlay .title {display:block;text-align:center;background:#fff;margin-right:35px;padding:10px 15px;font-size:14px;font-weight:bold;}
+	.customoverlay:after {content:'';position:absolute;margin-left:-12px;left:50%;bottom:-12px;width:22px;height:12px;background:url('http://i1.daumcdn.net/localimg/localimages/07/mapapidoc/vertex_white.png')}
 	</style>
 	<meta name="viewport" content="initial-scale=1.0,user-scalable=no">
 	<script src="static/js/jquery.cookie.js"></script>
@@ -51,10 +57,20 @@
 		});
 		marker.setMap(map);
 
-		var infowindow = new daum.maps.InfoWindow({
-			content: "지역을 선택하세요"
-		});
-			infowindow.open(map, marker);						
+		// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+		var content = '<div class="customoverlay">' +
+		'  <a href="http://chuizonebeta.appspot.com/" target="_blank">' +
+		'    <span class="title">지역과 취미를 선택하세요</span>' +
+		'  </a>' +
+		'</div>';
+
+		// 커스텀 오버레이를 생성합니다
+		var customOverlay = new daum.maps.CustomOverlay({
+			position: position,
+			content: content,
+			yAnchor: 1 
+		});						
+		customOverlay.setMap(map);	
 
 		$("#searcher_1").change(function() {
 			var gu_latlng = $(this).val().split(",");
@@ -63,14 +79,14 @@
 			var gu_name = $(this).children("option:selected").text();
 
 			var position = new daum.maps.LatLng(lat, lng);
-			console.log(position);	
-
+			// console.log(position);			
+			
 			var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
 				mapOption = {
 					center: position, // 지도의 중심좌표
 					level: 4 // 지도의 확대 레벨
 				};
-			
+
 			var map = new daum.maps.Map(mapContainer, mapOption);
 
 			var imageSrc = "http://i1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
@@ -81,11 +97,6 @@
 				position: position
 			});
 			marker.setMap(map);
-
-			var infowindow = new daum.maps.InfoWindow({
-				content: gu_name
-			});
-			infowindow.open(map, marker);
 
 			var points = [];
 
@@ -99,10 +110,14 @@
 							var academy_data = location_data[i];
 							points.push({title: academy_data.academy_name,latlng: academy_data.academy_latlng});
 						});
-						// console.log(points[i]);
-						var latlng = parseFloat(points[i].latlng);
+						var latlng = points[i].latlng;
+						var split_latlng = latlng.split(",");
+						var lat = split_latlng[0];
+						var lng = split_latlng[1];
 						var marker_title = points[i].title;
-						var marker_point = new daum.maps.LatLng(latlng);
+						var marker_point = new daum.maps.LatLng(lat, lng);
+
+						// console.log(latlng, lat, lng, marker_title);
 
 						var marker = new daum.maps.Marker({
 							map: map,
@@ -110,8 +125,9 @@
 							image : markerImage
 						});
 						marker.setMap(map);														
-						console.log(position);								
+
 					};	 
+
 					// function addMarker(points){
 					// 	for (var i = 0; i < points.length; i++){
 					// 		var imageSrc = "http://i1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
@@ -138,6 +154,34 @@
 					console.log('invalid response!. Server error!');
 				} 
 			});
+
+			// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
+			var content = '<div class="customoverlay">' +
+			'  <a href="http://chuizonebeta.appspot.com/" target="_blank">' +
+			'    <span class="title">' + 
+			marker_title + 
+			'</span>' +
+			'  </a>' +
+			'</div>';
+
+			// 커스텀 오버레이를 생성합니다
+			var customOverlay = new daum.maps.CustomOverlay({
+				position: marker_point,
+				content: content,
+				yAnchor: 0 
+			});
+
+			// 마커에 마우스오버 이벤트를 등록합니다
+			daum.maps.event.addListener(marker, 'mouseover', function() {
+				// 마커에 마우스오버 이벤트가 발생하면 인포윈도우를 마커위에 표시합니다
+				customOverlay.setMap(map);
+			});
+
+			// 마커에 마우스아웃 이벤트를 등록합니다
+			daum.maps.event.addListener(marker, 'mouseout', function() {
+				// 마커에 마우스아웃 이벤트가 발생하면 인포윈도우를 제거합니다
+				customOverlay.setMap(null);
+			});	
 
 			// var content = '<div class="overlaybox">' +
 			// 		'    <div class="boxtitle">추천 학원 정보</div>' +
