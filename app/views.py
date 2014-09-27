@@ -22,6 +22,9 @@ def map():
 @app.route('/mapnlist', methods = ['GET'])
 def mapnlist():
 	context = {}
+	gu_location = request.args.get('search_1')
+	category = request.args.get('search_2')
+
 	context['academy_list'] = db.session.query(Academy).order_by(desc(Academy.id)).limit(6)
 	return render_template('mapnlist.html', context = context, active_tab = 'academy_list')
 
@@ -36,6 +39,7 @@ def more_article():
 
 	for academy in more_data:
 		temp['id'] = academy.id
+		temp['category'] = academy.category
 		temp['location'] = academy.location
 		temp['academy_name'] = academy.academy_name
 		temp['teacher_name'] = academy.teacher_name
@@ -71,6 +75,7 @@ def mapdata():
 
 	for academy in more_data:
 		temp['id'] = academy.id
+		temp['category'] = academy.category		
 		temp['location'] = academy.location
 		temp['academy_name'] = academy.academy_name
 		temp['teacher_name'] = academy.teacher_name
@@ -138,14 +143,48 @@ def academy_create():
 	return render_template('create.html', form=form)
 
 
-@app.route('/academy/<int:id>', methods=['GET'])
-def academy_detail(id):
-	academy = Academy.query.get(id)
+@app.route('/academy_detail', methods=['GET'])
+def academy_detail():
+	academy_id = request.args.get('id')
+	academy = Academy.query.get(academy_id)
+	# more_data = db.session.query(Academy).filter(Academy.id == academy_id)
 
-	return render_template('academy.html', academy=academy)
+
+	response = make_response(render_template('academy_detail.html', academy = academy))
+	response.headers['Content-Type'] = 'text/plain'
+	return response
 
 
 @app.route('/academy_test_2')
 def academy_test_2():
 	
 	return render_template('academy_test_2.html')
+
+	# resp = {}
+	# resp["data"] = []
+	# temp = {}
+
+	# for academy in more_data:
+	# 	temp['id'] = academy.id
+	# 	temp['location'] = academy.location
+	# 	temp['academy_name'] = academy.academy_name
+	# 	temp['teacher_name'] = academy.teacher_name
+	# 	temp['academy_introduce'] = academy.academy_introduce
+	# 	temp['teacher_introduce'] = academy.teacher_introduce
+	# 	temp['curriculum_introduce'] = academy.curriculum_introduce
+	# 	temp['academy_address'] = academy.academy_address
+	# 	temp['academy_latlng'] = academy.academy_latlng
+	# 	temp['welcome_line'] = academy.welcome_line		
+	# 	temp['phone_number'] = academy.phone_number
+	# 	temp['class_time'] = academy.class_time
+	# 	temp['class_fee'] = academy.class_fee		
+	# 	temp['homepage'] = academy.homepage
+	# 	temp['image_1'] = academy.image_1
+	# 	temp['image_2'] = academy.image_2
+	# 	temp['image_3'] = academy.image_3
+	# 	temp['image_4'] = academy.image_4
+	# 	temp['image_5'] = academy.image_5
+	# 	temp['teacher_image'] = academy.teacher_image
+
+	# 	resp["data"].append(temp)
+	# 	temp = {}

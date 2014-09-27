@@ -65,11 +65,11 @@
 						academy = more_academy_list[i];
 						string =
 						"<li class='col-md-4 col-sm-6 col-xs-12 isotope-item websites' id='academy_"+ academy.id
-						+ "'><div class='portfolio-item img-thumbnail'><a href='/academy/"+ academy.id 
-						+ "' class='thumb-info'><img alt='' class='img-responsive' src='"+ academy.image_1
+						+ "'><div class='portfolio-item img-thumbnail'><button class='thumb-info' value='"+ academy.id
+						+ "' data-toggle='modal' data-target='#myModal'><img alt='' class='img-responsive' src='"+ academy.image_1
 						+ "'><span class='thumb-info-title'><span class='thumb-info-inner'>"+ academy.academy_name
 						+ "</span><span class='thumb-info-type'>"+ academy.category
-						+ "</span></span><span class='thumb-info-action'><span title='Universal' class='thumb-info-action-icon'><i class='fa fa-star'></i></span></span></a></div></li>";
+						+ "</span></span><span class='thumb-info-action'><span title='Universal' class='thumb-info-action-icon'><i class='fa fa-star'></i></span></span></button></div></li>";
 						$("#more_data").append(string);
 					}
 				},
@@ -77,32 +77,32 @@
 					console.log('invalid response!. Server error!');
 				}	
 			})
-});
+		});
 
 		// daum map API start
-		var position = new daum.maps.LatLng(37.572950635570876,126.9768891413955);
+		var position_default = new daum.maps.LatLng(37.500142,127.036498);
 		
 		var map = new daum.maps.Map(document.getElementById('map'), {			
-			center: position,
-			level: 8,
+			center: position_default,
+			level: 3,
 			mapTypeId: daum.maps.MapTypeId.ROADMAP
 		});
 
 		var marker = new daum.maps.Marker({
-			position: position
+			position: position_default
 		});
 		marker.setMap(map);
 
 		// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
 		var content = '<div class="customoverlay">' +
 		'  <a href="http://chuizonebeta.appspot.com/" target="_blank">' +
-		'    <span class="title">지역과 취미를 선택하세요</span>' +
+		'    <span class="title">HELLO GOOGLERS~!!<br>지역과 취미를 선택하세요</span>' +
 		'  </a>' +
 		'</div>';
 
 		// 커스텀 오버레이를 생성합니다
 		var customOverlay = new daum.maps.CustomOverlay({
-			position: position,
+			position: position_default,
 			content: content,
 			yAnchor: 1 
 		});						
@@ -121,38 +121,38 @@
 			mapOption = {
 					center: position, // 지도의 중심좌표
 					level: 3 // 지도의 확대 레벨
-				};
+			};
 
-				var map = new daum.maps.Map(mapContainer, mapOption);
+			var map = new daum.maps.Map(mapContainer, mapOption);
 
-				var imageSrc = "http://i1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
-				var imageSize = new daum.maps.Size(24, 35);
-				var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize);
+			var imageSrc = "http://i1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
+			var imageSize = new daum.maps.Size(24, 35);
+			var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize);
 
-				var marker = new daum.maps.Marker({
-					position: position
-				});
-				marker.setMap(map);
+			var marker = new daum.maps.Marker({
+				position: position
+			});
+			marker.setMap(map);
 
-				var points = [];
+			var points = [];
 
-				$.ajax({
-					url : "/mapdata",
-					dataType : "json",
-					success : function(resp){
-						var location_data = resp.data;					
-						for (var i = 0; i < location_data.length; i ++){		
-							$.each(location_data, function(i){
-								var academy_data = location_data[i];
-								points.push({id: academy_data.id, title: academy_data.academy_name, latlng: academy_data.academy_latlng});
-							});
-							var academy_id = points[i].id;						
-							var latlng = points[i].latlng;
-							var split_latlng = latlng.split(",");
-							var lat = split_latlng[0];
-							var lng = split_latlng[1];
-							var marker_title = points[i].title;
-							var marker_point = new daum.maps.LatLng(lat, lng);
+			$.ajax({
+				url : "/mapdata",
+				dataType : "json",
+				success : function(resp){
+					var location_data = resp.data;					
+					for (var i = 0; i < location_data.length; i ++){		
+						$.each(location_data, function(i){
+							var academy_data = location_data[i];
+							points.push({id: academy_data.id, title: academy_data.academy_name, latlng: academy_data.academy_latlng});
+						});
+						var academy_id = points[i].id;						
+						var latlng = points[i].latlng;
+						var split_latlng = latlng.split(",");
+						var lat = split_latlng[0];
+						var lng = split_latlng[1];
+						var marker_title = points[i].title;
+						var marker_point = new daum.maps.LatLng(lat, lng);
 
 						// console.log(latlng, lat, lng, marker_title);
 
@@ -165,12 +165,10 @@
 
 						// 커스텀 오버레이에 표출될 내용으로 HTML 문자열이나 document element가 가능합니다
 						var content = "<div class='customoverlay'>" +
-						"  <a href='http:/academy/"+ academy_id + "' target='_blank'>" +
-						"    <span class='title'>" + 
-						marker_title + 
-						"</span>" +
-						"  </a>" +
-						"</div>";
+						"  <a value='academy_"+ academy_id 
+						+ "' data-toggle='modal' data-target='#myModal' class='thumb-info' id='academy_" + academy_id
+						+"'><span class='title'>" + marker_title
+						+ "</span></a></div>";
 
 						// 커스텀 오버레이를 생성합니다
 						var customOverlay = new daum.maps.CustomOverlay({
@@ -179,38 +177,39 @@
 							yAnchor: 0 
 						});
 						customOverlay.setMap(map);	
-
 					};	 					
-
-
-					// function addMarker(points){
-					// 	for (var i = 0; i < points.length; i++){
-					// 		var imageSrc = "http://i1.daumcdn.net/localimg/localimages/07/mapapidoc/markerStar.png";
-					// 		var imageSize = new daum.maps.Size(24, 35);
-					// 		var markerImage = new daum.maps.MarkerImage(imageSrc, imageSize);
-					// 		var marker = new daum.maps.Marker({
-					// 			map: map,
-					// 			position: points[i].latlng,
-					// 			image : markerImage
-					// 		});				
-					// 		marker.setMap(map);							
-					// 		console.log(position);
-
-					// 		var infowindow = new daum.maps.InfoWindow({
-					// 			content: points[i].title
-					// 		});
-					// 		infowindow.open(map, marker);
-					// 		console.log(content);	
-					// 	};						
-					// };
-
 				},
 				error : function(){
 					console.log('invalid response!. Server error!');
 				} 
 			});
-});
-});	
+		});
+		// academy modal start			
+		$(document).on('click tap touchstart', '.thumb-info', function() {
+		// $('.thumb-info').click(function(){
+			// id = $(this).val().split("_")
+			id = $(this).attr('value').split('_')
+			console.log("clicked: " + id);
+			$.ajax({
+				url : "/academy_detail",
+				dataType : "html",
+				data : {
+					id : id[1]
+				},
+				success : function(resp){
+					$("#myModal").append(resp); 
+				},
+				error : function(resp){
+					console.log('invalid response!. Server error!');
+				}	
+			});
+		});
+
+		// $('#myModal').on('hidden.bs.modal', function () {
+		// 	$(this).data('bs.modal', null);
+		// 	console.log('reset modal!!');
+		// });	
+	});	
 
 </script>
 
@@ -339,7 +338,7 @@
 						{% for academy in context.academy_list %}
 						<li class="col-md-4 col-sm-6 col-xs-12 isotope-item websites" id="academy_{{academy.id}}">
 							<div class="portfolio-item img-thumbnail">
-								<a href="" class="thumb-info" data-toggle="modal" data-target="#myModal">
+								<button class="thumb-info" value="academy_{{academy.id}}" data-toggle="modal" data-target="#myModal">
 									<img alt="" class="img-responsive" src="{{academy.image_1}}">
 									<span class="thumb-info-title">
 										<span class="thumb-info-inner">{{ academy.academy_name }}</span>
@@ -348,7 +347,7 @@
 									<span class="thumb-info-action">
 										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-star"></i></span>
 									</span>
-								</a>
+								</button>
 							</div>
 						</li>
 						{% endfor %}
@@ -359,185 +358,16 @@
 						{% endif %}						
 					</ul>
 				</div>										
-
 			</div>
 		</div>
+	</div>
 		<!-- list end -->
 		<!-- left page end -->
-	</div>
 
+
+	<!-- modal page start -->	
 	<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-		<div class="modal-dialog">
-			<div class="modal-content">
-				<div class="modal-header">
-					<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-					<h4 class="modal-title" id="myModalLabel">Academy Name</h4>
-				</div>
-
-				<div class="modal-body">
-					<div class="container">
-						<div class="row contents-position">
-							<div class="col-md-6">
-								<!-- carousel start -->
-								<div id="carousel-example-generic" class="carousel slide carousel-fade" data-ride="carousel">
-									<!-- Indicators -->
-									<ol class="carousel-indicators">
-										<li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-										<li data-target="#carousel-example-generic" data-slide-to="1"></li>
-										<li data-target="#carousel-example-generic" data-slide-to="2"></li>
-										<li data-target="#carousel-example-generic" data-slide-to="3"></li>
-										<li data-target="#carousel-example-generic" data-slide-to="4"></li>
-									</ol>
-									<!-- Wrapper for slides -->
-									<div class="carousel-inner">
-										<div class="item active">
-											<img src="http://i.imgur.com/q8uLEsF.jpg" alt="data-slide-to-0">
-											<div class="carousel-caption">
-											</div>
-										</div>
-										<div class="item">
-											<img src="http://i.imgur.com/pAYrbTR.jpg" alt="data-slide-to-1">
-											<div class="carousel-caption">
-											</div>
-										</div>
-										<div class="item">
-											<img src="http://i.imgur.com/q8uLEsF.jpg" alt="data-slide-to-2">
-											<div class="carousel-caption">
-											</div>
-										</div>
-										<div class="item">
-											<img src="http://i.imgur.com/pAYrbTR.jpg" alt="data-slide-to-3">
-											<div class="carousel-caption">
-											</div>
-										</div>
-										<div class="item">
-											<img src="http://i.imgur.com/WBgF0o4.jpg" alt="data-slide-to-4">
-											<div class="carousel-caption">
-											</div>
-										</div>
-									</div>
-								</div>
-								<!-- carousel end -->
-							</div>
-
-
-							<div class="col-md-6">
-								<div class="tabs">
-									<ul class="nav nav-tabs">
-										<li class="active">
-											<a href="#Welcome" data-toggle="tab"><i class="fa fa-star"></i>Welcome</a>
-										</li>
-										<li>
-											<a href="#Academy" data-toggle="tab">Academy</a>
-										</li>
-										<li>
-											<a href="#Teacher" data-toggle="tab">Teacher</a>
-										</li>
-										<li>
-											<a href="#Interview" data-toggle="tab">Interview</a>
-										</li>
-										<li>
-											<a href="#Curriculum" data-toggle="tab">Curriculum</a>
-										</li>
-										<li>
-											<a href="#Etc" data-toggle="tab">Etc</a>
-										</li>
-									</ul>
-									<div class="tab-content">
-										<div id="Welcome" class="tab-pane active">
-											<h2><strong>LHOOQ</strong></h2>
-											<p>서울시 관악구 중앙동 874-13 3층</p>
-											<p>"LHOOQ에서 여러분의 찰나의 여생, 행복의 숙주가 되길 빌어봅니다."</p>
-										</div>
-
-										<div id="Academy" class="tab-pane">
-											<p>LHOOQ는 뒤샹의 작품 제목에서 슬쩍한 이름입니다.
-												LHOOQ를 불어식 스펠링으로 읽으면 [엘라쇼오뀌] 라고 읽는다는데요.
-												잘 아시는 상표인 I.N.V.U 가 I envy you와 발음이 비슷하듯이
-												불어로 LHOOQ는 [Elle a Chaud au Cul]가 된다는군요.<br><br>
-
-												[Elle a Chaud au Cul]를 영어로 풀어보면 she has a hot ass란 뜻이되죠.<br>
-												'그녀는 뜨거운 엉덩이를 가졌다'<br><br>
-
-												독창적인 발랄함을 우선하는 LHOOQ에서
-												여러분의 찰나의 여생, 행복의 숙주가 되길 빌어봅니다.
-											</p>
-										</div>
-
-										<div id="Teacher" class="tab-pane">
-											<h3><strong>Mr.Park</strong></h3>
-											<div class="col-md-5">
-												<img src="http://i.imgur.com/EiyRNm4.jpg" alt="..." class="img-circle">
-											</div>
-											<div class="col-md-7">
-												<p>서울대 서양화과를 졸업하고, 아주 잠시간 Russia, Saint Petersburg Academy에서 practical course를 수료했습니다.</p>
-											</div>
-										</div>
-
-										<div id="Interview" class="tab-pane">
-											<p>Interview</p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.</p>
-										</div>
-
-										<div id="Curriculum" class="tab-pane">
-											<p>Curriculum</p>
-											<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat.</p>
-										</div>
-
-										<div id="Etc" class="tab-pane">
-											<div class="row featured-boxes">
-												<div class="col-md-3 col-sm-6">
-													<div class="featured-box featured-box-primary">
-														<div class="box-content">
-															<i class="icon-featured fa fa-user"></i>
-															<h4>Phone Number</h4>
-															<p>010-1234-5678</p>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-3 col-sm-6">
-													<div class="featured-box featured-box-secundary">
-														<div class="box-content">
-															<i class="icon-featured fa fa-book"></i>
-															<h4>Time</h4>
-															<p>10AM - 10PM</p>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-3 col-sm-6">
-													<div class="featured-box featured-box-tertiary">
-														<div class="box-content">
-															<i class="icon-featured fa fa-trophy"></i>
-															<h4>Fee</h4>
-															<p>150,000/month</p>
-														</div>
-													</div>
-												</div>
-												<div class="col-md-3 col-sm-6">
-													<div class="featured-box featured-box-quartenary">
-														<div class="box-content">
-															<i class="icon-featured fa fa-cogs"></i>
-															<h4>Web Site</h4>
-															<p>Click Me</p>
-														</div>
-													</div>
-												</div>
-											</div>
-										</div>
-									</div>
-								</div>
-							</div>
-						</div>
-					</div>
-				</div>
-
-
-				<div class="modal-footer">
-					<button type="button" class="btn btn-primary">Visit Homepage</button>
-					<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>					
-				</div>
-			</div>
-		</div>
 	</div>
+	<!-- modal page end -->			
 </body>
 </html>
