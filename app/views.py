@@ -32,12 +32,13 @@ def mapnlist():
 def more_academy():
 	current_row = int(request.args.get('current_row'))
 	category = str(request.args.get('category'))
+	gu_name = str(request.args.get('gu_name'))
 	if category == "all":
 		more_data = db.session.query(Academy).order_by(desc(Academy.id))[current_row: current_row + 6]
 
 	else:
-		more_data = db.session.query(Academy).filter(Academy.category == category).all()
-		# query.filter(and_(User.name == 'ed', User.fullname == 'Ed Jones'))
+		more_data = db.session.query(Academy).filter(and_(Academy.category == category), Academy.location ==gu_name).all()
+
 	resp = {}
 	resp["data"] = []
 	temp = {}
@@ -74,7 +75,14 @@ def more_academy():
 
 @app.route('/mapdata')
 def mapdata():
-	more_data = db.session.query(Academy).order_by(desc(Academy.id))
+	current_row = int(request.args.get('current_row'))
+	gu_name = str(request.args.get('gu_name'))
+	category = str(request.args.get('category'))
+	if gu_name == "all":
+		more_data = db.session.query(Academy).order_by(desc(Academy.id))[current_row: current_row + 6]
+	else:
+		more_data = db.session.query(Academy).filter(and_(Academy.category == category), Academy.location ==gu_name).all()
+
 	resp = {}
 	resp["data"] = []
 	temp = {}
