@@ -93,11 +93,11 @@
 						academy = more_academy_list[i];
 						string =
 						"<li class='col-md-4 col-sm-6 col-xs-12 isotope-item websites' id='academy_"+ academy.id
-						+ "'><div class='portfolio-item img-thumbnail'><button class='thumb-info' value='academy_"+ academy.id
+						+ "'><div class='portfolio-item img-thumbnail'><a class='thumb-info' value='academy_"+ academy.id
 						+ "' data-toggle='modal' data-target='#myModal'><img alt='' class='img-responsive' src='"+ academy.image_1
 						+ "'><span class='thumb-info-title'><span class='thumb-info-inner'>"+ academy.academy_name
 						+ "</span><span class='thumb-info-type'>"+ academy.category
-						+ "</span></span><span class='thumb-info-action'><span title='Universal' class='thumb-info-action-icon'><i class='fa fa-star'></i></span></span></button></div></li>";
+						+ "</span></span><span class='thumb-info-action'><span title='Universal' class='thumb-info-action-icon'><i class='fa fa-star'></i></span></span></a></div></li>";
 						$("#more_data").prepend(string);
 					}
 				},
@@ -115,7 +115,8 @@
 				dataType : "json",
 				data : {
 					current_row : current_row,
-					category : category
+					category : category,
+					gu_name : gu_name
 				},
 				success : function(resp){
 					current_row += 6;
@@ -124,11 +125,11 @@
 						academy = more_academy_list[i];
 						string =
 						"<li class='col-md-4 col-sm-6 col-xs-12 isotope-item websites' id='academy_"+ academy.id
-						+ "'><div class='portfolio-item img-thumbnail'><button class='thumb-info' value='academy_"+ academy.id
+						+ "'><div class='portfolio-item img-thumbnail'><a class='thumb-info' value='academy_"+ academy.id
 						+ "' data-toggle='modal' data-target='#myModal'><img alt='' class='img-responsive' src='"+ academy.image_1
 						+ "'><span class='thumb-info-title'><span class='thumb-info-inner'>"+ academy.academy_name
 						+ "</span><span class='thumb-info-type'>"+ academy.category
-						+ "</span></span><span class='thumb-info-action'><span title='Universal' class='thumb-info-action-icon'><i class='fa fa-star'></i></span></span></button></div></li>";
+						+ "</span></span><span class='thumb-info-action'><span title='Universal' class='thumb-info-action-icon'><i class='fa fa-star'></i></span></span></a></div></li>";
 						$("#more_data").prepend(string);
 					}
 				},
@@ -143,6 +144,7 @@
 			var lat = parseFloat(gu_latlng[0]);
 			var lng = parseFloat(gu_latlng[1]);
 			var gu_name = $(this).children("option:selected").text();
+			console.log(gu_name);
 
 			var position = new daum.maps.LatLng(lat, lng);
 			// console.log(position);			
@@ -169,6 +171,10 @@
 			$.ajax({
 				url : "/mapdata",
 				dataType : "json",
+				data : {
+					gu_name : gu_name,
+					category : category
+				},
 				success : function(resp){
 					var location_data = resp.data;					
 					for (var i = 0; i < location_data.length; i ++){		
