@@ -6,7 +6,12 @@
 
 	<!-- Basic -->
 	<meta charset="utf-8">
-	<title>WELCOME TO CHUIZONE</title>		
+	<title>WELCOME TO CHUIZONE</title>
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
 	<meta name="keywords" content="HTML5 Template" />
 	<meta name="description" content="Porto - Responsive HTML5 Template">
 	<meta name="author" content="okler.net">
@@ -43,6 +48,19 @@
 
 	<!-- Head Libs -->
 	<script src="static/vendor/modernizr/modernizr.js"></script>
+	<script src="static/js/jquery.cookie.js"></script>
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#chuizone_start').click(function(){
+			$.removeCookie('current_row');
+			$.removeCookie('category');
+			$.removeCookie('gu_location');
+			$.cookie('current_row', 6, { expires: 1 });		
+			$.cookie('category', 'all', { expires: 1 });
+			$.cookie('gu_location', 'all', { expires: 1 });	
+		});
+	});
+	</script>
 	<style type="text/css">
 	body { 
 		background: url('http://i.imgur.com/Z7uSGer.jpg') no-repeat center center fixed; 
@@ -216,7 +234,7 @@
 								</div>
 								<div class="col-md-4">
 									<div class="get-started">
-										<a href="{{ url_for('mapnlist')}}" class="btn btn-lg btn-primary">Get Started Now!</a>
+										<a href="{{ url_for('mapnlist')}}" class="btn btn-lg btn-primary" id="chuizone_start">Get Started Now!</a>
 									</div>
 								</div>
 							</div>

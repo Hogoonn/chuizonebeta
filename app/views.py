@@ -8,7 +8,7 @@ from app import app, db
 from app.forms import AcademyForm
 from app.models import Academy
 from flask.ext.sqlalchemy import SQLAlchemy
-from sqlalchemy import desc
+from sqlalchemy import desc, and_, or_
 
 @app.route('/')
 @app.route('/main')
@@ -22,8 +22,6 @@ def map():
 @app.route('/mapnlist', methods = ['GET'])
 def mapnlist():
 	context = {}
-	gu_location = request.args.get('search_1')
-	category = request.args.get('search_2')
 
 	context['academy_list'] = db.session.query(Academy).order_by(desc(Academy.id)).limit(6)
 	return render_template('mapnlist.html', context = context)
@@ -31,13 +29,13 @@ def mapnlist():
 @app.route('/ajax/more_academy')
 def more_academy():
 	current_row = int(request.args.get('current_row'))
-	category = str(request.args.get('category'))
-	gu_name = str(request.args.get('gu_name'))
-	if category == "all":
+	category = request.args.get('category')
+	gu_location = request.args.get('gu_location')
+	if gu_location == "all" or category == "all":
 		more_data = db.session.query(Academy).order_by(desc(Academy.id))[current_row: current_row + 6]
 
 	else:
-		more_data = db.session.query(Academy).filter(and_(Academy.category == category), Academy.location ==gu_name).all()
+		more_data = db.session.query(Academy).filter(and_(Academy.category == category, Academy.location == gu_location)).all()
 
 	resp = {}
 	resp["data"] = []
@@ -76,12 +74,12 @@ def more_academy():
 @app.route('/mapdata')
 def mapdata():
 	current_row = int(request.args.get('current_row'))
-	gu_name = str(request.args.get('gu_name'))
-	category = str(request.args.get('category'))
-	if gu_name == "all":
-		more_data = db.session.query(Academy).order_by(desc(Academy.id))[current_row: current_row + 6]
+	gu_location = request.args.get('gu_location')
+	category = request.args.get('category')
+	if gu_location == "all" or category == "all":
+		more_data = db.session.query(Academy).order_by(desc(Academy.id)).all()
 	else:
-		more_data = db.session.query(Academy).filter(and_(Academy.category == category), Academy.location ==gu_name).all()
+		more_data = db.session.query(Academy).filter(and_(Academy.category == category, Academy.location == gu_location)).all()
 
 	resp = {}
 	resp["data"] = []
