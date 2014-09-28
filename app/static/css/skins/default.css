@@ -87,7 +87,7 @@ body.dark .pagination > .active > span:focus {
 .btn-primary,
 .pagination > .active > a,
 body.dark .pagination > .active > a {
-	border-color: #ff9f4a !important;
+	border-color: #171717 !important;
 	color: #ffffff;
 	text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
 	background-color: #0088cc;
@@ -97,8 +97,8 @@ body.dark .pagination > .active > a {
 .btn-primary:hover,
 .pagination > .active > a:hover,
 body.dark .pagination > .active > a:hover {
-	border-color: #fd8419;
-	background-color: #fd8419;
+	border-color: #13889a;
+	background-color: #13889a;
 }
 
 .btn-primary:active,

@@ -13,7 +13,7 @@ from sqlalchemy import desc, and_, or_
 @app.route('/')
 @app.route('/main')
 def main():
-	return render_template('main.html')
+	return render_template('new_index.html')
 
 @app.route('/map')
 def map():
