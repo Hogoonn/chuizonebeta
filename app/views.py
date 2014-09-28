@@ -31,7 +31,7 @@ def more_academy():
 	current_row = int(request.args.get('current_row'))
 	category = request.args.get('category')
 	gu_location = request.args.get('gu_location')
-	if gu_location == "all" and category == "all":
+	if gu_location == "all" or category == "all":
 		more_data = db.session.query(Academy).order_by(desc(Academy.id))[current_row: current_row + 6]
 
 	else:
@@ -76,8 +76,8 @@ def mapdata():
 	current_row = int(request.args.get('current_row'))
 	gu_location = request.args.get('gu_location')
 	category = request.args.get('category')
-	if gu_location == "all" and category == "all":
-		more_data = db.session.query(Academy).order_by(desc(Academy.id))[current_row: current_row + 6]
+	if gu_location == "all" or category == "all":
+		more_data = db.session.query(Academy).order_by(desc(Academy.id)).all()
 	else:
 		more_data = db.session.query(Academy).filter(and_(Academy.category == category, Academy.location == gu_location)).all()
 

@@ -76,9 +76,6 @@
 		customOverlay.setMap(map);	
 
 		// academy data appending	
-		// $.cookie('current_row', int(6), { expires: 1 });		
-		// $.cookie('category', 'all', { expires: 1 });
-		// $.cookie('gu_location', 'all', { expires: 1 });
 		var current_row = $.cookie('current_row');
 		var category = $.cookie('category');
 		var gu_location = $.cookie('gu_location');	
@@ -92,7 +89,9 @@
 					category : category
 				},
 				success : function(resp){
-					current_row += 6;
+					var num = Number(current_row);
+					num += 6;
+					current_row = String(num);
 					more_academy_list = resp.data;
 					for(var i = 0; i < more_academy_list.length; i ++){
 						academy = more_academy_list[i];
@@ -115,7 +114,6 @@
 		$('#searcher_2').change(function(){
 			var category = $(this).val();		
 			$.cookie('category', category, { expires: 1 });
-			$.cookie('current_row', int(6),  { expires: 1 });
 			var current_row = $.cookie('current_row');
 			var category = $.cookie('category');
 			var gu_location = $.cookie('gu_location');	
@@ -130,7 +128,9 @@
 					gu_location : gu_location
 				},
 				success : function(resp){
-					current_row += 6;
+					var num = Number(current_row);
+					num += 6;
+					current_row = String(num);
 					$.cookie('current_row', current_row, { expires: 1 });
 					more_academy_list = resp.data;
 					for(var i = 0; i < more_academy_list.length; i ++){
@@ -171,7 +171,7 @@
 			var mapContainer = document.getElementById('map'), // 지도를 표시할 div  
 			mapOption = {
 					center: position, // 지도의 중심좌표
-					level: 3 // 지도의 확대 레벨
+					level: 4 // 지도의 확대 레벨
 			};
 
 			var map = new daum.maps.Map(mapContainer, mapOption);
@@ -191,6 +191,7 @@
 				url : "/mapdata",
 				dataType : "json",
 				data : {
+					current_row : current_row,
 					gu_location : gu_location,
 					category : category
 				},
