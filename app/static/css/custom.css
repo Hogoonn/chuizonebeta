@@ -16,8 +16,13 @@
 	margin-top: 5%;
 }
 
+.modal-title {
+	font-weight: bolder;
+	font-size: 23px;
+}
+
 #carousel-example-generic {
-	border: 1px solid #ff9f4a;
+	border: 2px solid #13889a;
 }
 
 .tab-pane > p {
