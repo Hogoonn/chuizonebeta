@@ -1,0 +1,251 @@
+*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 14:56:36 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xcc5e50
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ImportError: No module named app
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7534)
+spawned uWSGI worker 1 (pid: 7535, cores: 1)
+Thu Oct 16 14:57:29 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 14:57:29 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x12a5de0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+ImportError: No module named app
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7542)
+spawned uWSGI worker 1 (pid: 7543, cores: 1)
+Thu Oct 16 15:01:37 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 15:01:37 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x9c5de0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x9c5de0 pid: 7568 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 7568)
+spawned uWSGI worker 1 (pid: 7573, cores: 1)
+[pid: 7573|app: 0|req: 1/1] 119.82.53.60 () {36 vars in 619 bytes} [Thu Oct 16 15:01:50 2014] GET / => generated 18 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[pid: 7573|app: 0|req: 2/2] 119.82.53.60 () {36 vars in 570 bytes} [Thu Oct 16 15:01:50 2014] GET /favicon.ico => generated 233 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 7573|app: 0|req: 3/3] 119.82.53.60 () {36 vars in 619 bytes} [Thu Oct 16 15:26:23 2014] GET / => generated 18 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+Thu Oct 16 15:27:14 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 15:27:14 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1f08de0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1f08de0 pid: 30925 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 30925)
+spawned uWSGI worker 1 (pid: 30932, cores: 1)
+[pid: 30932|app: 0|req: 1/1] 119.82.53.60 () {38 vars in 650 bytes} [Thu Oct 16 15:27:19 2014] GET / => generated 31 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[pid: 30932|app: 0|req: 2/2] 119.82.53.60 () {38 vars in 650 bytes} [Thu Oct 16 15:28:18 2014] GET / => generated 31 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[pid: 30932|app: 0|req: 3/3] 119.82.53.60 () {36 vars in 618 bytes} [Thu Oct 16 15:36:48 2014] GET / => generated 31 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
+[pid: 30932|app: 0|req: 4/4] 119.82.53.60 () {36 vars in 569 bytes} [Thu Oct 16 15:36:49 2014] GET /favicon.ico => generated 233 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Thu Oct 16 16:34:43 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 16:34:43 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xe83de0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+Traceback (most recent call last):
+  File "./app/__init__.py", line 19, in <module>
+    from app import views, models
+  File "./app/views.py", line 8, in <module>
+    from app.forms import AcademyForm
+ImportError: No module named forms
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 31062)
+spawned uWSGI worker 1 (pid: 31067, cores: 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 31067|app: -1|req: -1/1] 66.249.82.56 () {38 vars in 635 bytes} [Thu Oct 16 16:34:50 2014] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+--- no python application found, check your startup logs for errors ---
+[pid: 31067|app: -1|req: -1/2] 119.82.53.60 () {36 vars in 618 bytes} [Thu Oct 16 16:34:52 2014] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Thu Oct 16 16:36:27 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 16:36:27 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x1b6ade0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+Traceback (most recent call last):
+  File "./app/__init__.py", line 19, in <module>
+    from app import views, models
+  File "./app/views.py", line 14, in <module>
+    @app.route('main')
+  File "/home/ec2-user/chuizonebeta/venv/lib/python2.6/site-packages/flask/app.py", line 1013, in decorator
+    self.add_url_rule(rule, endpoint, f, **options)
+  File "/home/ec2-user/chuizonebeta/venv/lib/python2.6/site-packages/flask/app.py", line 62, in wrapper_func
+    return f(self, *args, **kwargs)
+  File "/home/ec2-user/chuizonebeta/venv/lib/python2.6/site-packages/flask/app.py", line 976, in add_url_rule
+    rule = self.url_rule_class(rule, methods=methods, **options)
+  File "/home/ec2-user/chuizonebeta/venv/lib/python2.6/site-packages/werkzeug/routing.py", line 537, in __init__
+    raise ValueError('urls must start with a leading slash')
+ValueError: urls must start with a leading slash
+unable to load app 0 (mountpoint='') (callable not found or import error)
+*** no app loaded. going in full dynamic mode ***
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 31074)
+spawned uWSGI worker 1 (pid: 31081, cores: 1)
+--- no python application found, check your startup logs for errors ---
+[pid: 31081|app: -1|req: -1/1] 119.82.53.60 () {38 vars in 649 bytes} [Thu Oct 16 16:36:33 2014] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
+Thu Oct 16 16:38:36 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 16:38:36 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xfa8de0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xfa8de0 pid: 31090 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 31090)
+spawned uWSGI worker 1 (pid: 31097, cores: 1)
+[pid: 31097|app: 0|req: 1/1] 119.82.53.60 () {38 vars in 649 bytes} [Thu Oct 16 16:38:39 2014] GET / => generated 291 bytes in 15 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+[pid: 31097|app: 0|req: 2/2] 119.82.53.60 () {38 vars in 649 bytes} [Thu Oct 16 16:40:28 2014] GET / => generated 291 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+[pid: 31097|app: 0|req: 3/3] 119.82.53.60 () {36 vars in 619 bytes} [Thu Oct 16 16:45:44 2014] GET / => generated 291 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)

@@ -1,0 +1,44 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+* {
+	font-family: nanumgothiccoding, Arial;
+	word-spacing: -1px;
+}
+
+#map-canvas {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #f1f1f1;
+	height: 360px;
+	position: relative;
+    top: -50px;
+}	
+
+#map {
+	height: 100%;
+	border: 1px solid #ffffff;
+}
+
+#panel {
+	position: absolute;
+	top: 5px;
+	left: 50%;
+	margin-left: -180px;
+	z-index: 5;
+	background-color: #fff;
+	padding: 5px;
+	border: 1px solid #999;
+}
+
+#academy_latlng {
+	display:none;
+}
+
+.form_input {
+    position: relative;
+    top: -50px;
+}

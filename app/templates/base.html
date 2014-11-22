@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="ko-kr">
+<head>
+	<meta name="viewport" content="initial-scale=1.0,user-scalable=no">
+	<meta charset="UTF-8">
+
+	<title>CHUIZONE</title>
+
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap-theme.min.css">
+	<link rel="stylesheet" type="text/css" href="static/css/mapnlist.css">
+
+	{% block favicon %}
+		<link rel="shortcut icon" href="{{ url_for('static', filename='images/favicon.ico') }}"/>
+	{% endblock %}
+
+	<script type="text/javascript" src="http://code.jquery.com/jquery-latest.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>   
+	<script src="static/js/jquery.cookie.js"></script>
+	<script type="text/javascript" src="http://maps.googleapis.com/maps/api/js?key=AIzaSyBo6mw3pa4OU_CPbU8u_TGt87h9vu0Nw5w&sensor=TRUE&language=ko"></script>
+	<script src="static/js/mapnlist.js"></script>
+</head>
+<body onload="initialize()">
+{% block layout %}{% endblock %}
+
+</body>
+</html>
+

@@ -1,0 +1,56 @@
+{% extends "layout.html" %}
+
+{% block mapnlist %}
+		<!-- left map start -->
+	<div class="row">
+		<div class="col-md-4 col-sm-6 col-xs-6" id="map-canvas">
+			<div id="map"></div>
+		</div>
+		<!-- left map end -->
+
+		<!-- academy list start -->
+		<div class="col-md-8 col-sm-6 col-xs-6" id="map-ac">
+			<div class="list">
+				<div class="row">
+					<ul class="portfolio-list sort-destination" data-sort-id="portfolio" id="more_data"></ul>
+				</div>
+				<div class="row">
+					<ul class="portfolio-list sort-destination" data-sort-id="portfolio">
+						{% if context.academy_list %}
+						{% for academy in context.academy_list %}
+						<li class="col-md-4 col-sm-6 col-xs-12 isotope-item websites" id="academy_{{academy.id}}">
+							<div class="portfolio-item img-thumbnail">
+								<a class="thumb-info" value="academy_{{academy.id}}" data-toggle="modal" data-target="#myModal">
+									<img alt="" class="img-responsive" src="{{academy.image_1}}">
+									<span class="thumb-info-title">
+										<span class="thumb-info-inner">{{ academy.academy_name }}</span>
+										<span class="thumb-info-type">{{ academy.category }}</span>
+									</span>
+									<span class="thumb-info-action">
+										<span title="Universal" class="thumb-info-action-icon"><i class="fa fa-star"></i></span>
+									</span>
+								</a>
+							</div>
+						</li>
+						{% endfor %}
+						{% else %}
+						<div class="no-list">
+							등록된 취미 학원이 없습니다. 
+						</div>
+						{% endif %}						
+					</ul>
+				</div>
+				<div class="row" id="googlead">
+					
+				</div>										
+			</div>
+		</div>
+		<!-- academy list end -->	
+
+		<!-- modal page start -->	
+		<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+		</div>
+		<!-- modal page end -->	
+
+	</div>
+{% endblock %}

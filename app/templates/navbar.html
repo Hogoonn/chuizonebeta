@@ -1,0 +1,70 @@
+<!-- navigator start -->
+<div class="nav">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-2 col-sm-2 col-xs-2">
+				<p>CHUIZONE</p>
+			</div>
+			<div class="col-md-9 col-sm-9 col-xs-2">
+				<!-- searcher start -->
+				<div class="searcher">
+					<div class="row">
+						<form role="form" method="GET" action="{{url_for('mapnlist')}}">
+							<div class="col-md-4 col-sm-4 col-xs-4">                
+								<select class="form-control" name="searcher_1" id="searcher_1">
+									<option name="all" value="37.497962,127.027610,all">지역을 선택하세요</option>
+									<option name="all" value="37.497962,127.027610,all">전체</option>
+									<option name="kng" value="37.497962,127.027610,kng">강남구(강남역)</option>
+									<option name="kdg" value="37.535896,127.132356,kdg">강동구(강동역)</option>
+									<option name="kbg" value="37.626243,127.026108,kbg">강북구(미아역)</option>
+									<option name="ksg" value="37.548253,126.863421,ksg">강서구(강서구청)</option>
+									<option name="kag" value="37.481212,126.952903,kag">관악구(서울대입구역)</option>
+									<option name="kjg" value="37.537163,127.086116,kjg">광진구(구의역)</option>
+									<option name="krg" value="37.503275,126.882218,krg">구로구(구로역)</option>
+									<option name="kcg" value="37.454757,126.900526,kcg">금천구(시흥사거리)</option>
+									<option name="nwg" value="37.655637,127.060264,nwg">노원구(노원역)</option>
+									<option name="dbg" value="37.648519,127.034618,dbg">도봉구(쌍문역)</option>
+									<option name="ddmg" value="37.564218,127.007174,ddmg">동대문구(역사문화공원역)</option>
+									<option name="djg" value="37.513587,126.940881,djg">동작구(노량진역)</option>
+									<option name="mpg" value="37.556861,126.923750,mpg">마포구(홍대입구역)</option>
+									<option name="sdmg" value="37.579256,126.936128,sdmg">서대문구(서대문구청)</option>
+									<option name="scg" value="37.493697,127.013710,scg">서초구(교대역)</option>
+									<option name="sdg" value="37.561172,127.035390,sdg">성동구(왕십리역)</option>
+									<option name="sbg" value="37.592753,127.016468,sbg">성북구(성신여대)</option>
+									<option name="spg" value="37.513299,127.100130,spg">송파구(잠실역)</option>
+									<option name="ycg" value="37.526175,126.864311,ycg">양천구(목동오거리)</option>
+									<option name="ydpg" value="37.516426,126.906626,ydpg">영등포구(영등포역)</option>
+									<option name="ysg" value="37.529229,126.967933,ysg">용산구(신용산역)</option>
+									<option name="epg" value="37.610953,126.929535,epg">은평구(불광역)</option>
+									<option name="jrg" value="37.570420,126.992134,jrg">종로구(종로3가)</option>
+									<option name="jg" value="37.566040,126.982676,jg">중구(을지로입구역)</option>
+									<option name="jlg" value="37.596383,127.085549,jlg">중랑구(상봉역)</option>
+								</select>
+							</div>
+							<div class="col-md-4 col-sm-4 col-xs-4">
+								<select class="form-control" name="searcher_2" id="searcher_2">
+									<option value="all">취미를 선택하세요</option>
+									<option value="all">전체</option>
+									<option value="craft">공예</option>
+									<option value="art">미술</option>
+									<option value="sport">스포츠</option>
+									<option value="cooking">요리</option>
+									<option value="music">음악</option>
+									<option value="flower">플라워</option>
+								</select>
+							</div>
+							<div class="col-md-2 col-sm-2 col-xs-2">
+								<input type="submit" class="btn btn-default" id="map_searcher" value="검색"></input>
+							</div>                              
+						</form>
+						<div class="col-md-1 col-sm-1 col-xs-2">
+							<button class = "btn btn-default" id = "more_btn"> 검색 더 보기 </button>
+						</div>                  
+					</div>
+				</div>
+				<!-- searcher end -->
+			</div>
+		</div>
+	</div>
+</div>
+<!-- navigator end -->

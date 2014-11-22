@@ -1,0 +1,56 @@
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothiccoding.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanumgothic.css);
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+body {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+html {
+	height: 100%;
+	width: 100%;
+	overflow-x: hidden;
+	overflow-y: hidden;
+}
+
+/*nav start*/
+.nav {
+	background-color: #f1f1f1;
+	width: 100%;
+	height: 50px;
+	border-bottom: 1px solid #c8c8c8;
+}
+
+.nav p {
+	font-size: 25px;
+	font-weight: bold;
+	color: #ff6666;
+	padding-top: 7px;
+}
+/*nav end*/
+
+/*map start*/
+
+#map-canvas {
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+	background-color: #f1f1f1;
+	height: 720px;
+}	
+
+#map {
+	height: 100%;
+	border: 1px solid #ffffff;
+}
+
+/*map end*/
+
+/*searcher start*/
+.searcher {
+	padding: 7px 0px 10px 0px;
+}
+/*searcher end*/

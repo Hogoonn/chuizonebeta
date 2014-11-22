@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+
+{% block layout %}
+	{% block navbar %}
+		{% include "navbar.html" %}
+	{% endblock %}
+
+	<div class="container-fluid">
+		{% block mapnlist %}
+			{% include "mapnlist.html" %}
+		{% endblock %}
+	</div>
+{% endblock %}
