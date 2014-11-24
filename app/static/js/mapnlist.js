@@ -64,60 +64,60 @@ $(document).ready(function(){
 
 	// academy data searching	
 
-	// $("#map_searcher").click(function() {
-	// 	var gu_latlng = $("#searcher_1").val().split(",");
-	// 	var lat = parseFloat(gu_latlng[0]);
-	// 	var lng = parseFloat(gu_latlng[1]);
-	// 	var gu_location = gu_latlng[2];
-	// 	var category = $("#searcher_2").val();
-	// 	$.cookie('gu_location', gu_location, { expires: 1 });
-	// 	$.cookie('category', category, { expires: 1 });
-	// 	$.cookie('current_row', 6, { expires: 1 });
-	// 	var gu_name = $("#searcher_1").children("option:selected").text();
-	// 	// console.log('cookie test:' + gu_location + current_row + category+ lat + lng);
-	// 	var position_default = new google.maps.LatLng(lat, lng);		
-	// 	console.log('cookie test:' + position_default + neighborhoods);
+	$("#map_searcher").click(function() {
+		var gu_latlng = $("#searcher_1").val().split(",");
+		var lat = parseFloat(gu_latlng[0]);
+		var lng = parseFloat(gu_latlng[1]);
+		var gu_location = gu_latlng[2];
+		var category = $("#searcher_2").val();
+		$.cookie('gu_location', gu_location, { expires: 1 });
+		$.cookie('category', category, { expires: 1 });
+		$.cookie('current_row', 6, { expires: 1 });
+		var gu_name = $("#searcher_1").children("option:selected").text();
+		// console.log('cookie test:' + gu_location + current_row + category+ lat + lng);
+		var position_default = new google.maps.LatLng(lat, lng);		
+		// console.log('cookie test:' + gu_name + gu_location + position_default + neighborhoods[3]);
 
-	// 	$.ajax({
-	// 		url : "/mapdata",
-	// 		dataType : "json",
-	// 		data : {
-	// 			current_row : current_row,
-	// 			gu_location : gu_location,
-	// 			category : category
-	// 		},
-	// 		success : function(resp){
-	// 			var location_data = resp.data;
-	// 			console.log(location_data);					
-	// 			for (var i = 0; i < location_data.length; i ++){		
-	// 				$.each(location_data, function(i){
-	// 					var academy_data = location_data[i];
-	// 					neighborhoods.push({id: academy_data.id, title: academy_data.academy_name, latlng: academy_data.academy_latlng});
-	// 				});
-	// 				var academy_id = neighborhoods[i].id;						
-	// 				var latlng = neighborhoods[i].latlng;
-	// 				var split_latlng = latlng.split(",");
-	// 				var lat = split_latlng[0];
-	// 				var lng = split_latlng[1];
-	// 				var marker_title = neighborhoods[i].title;
-	// 				var marker_point = new google.maps.LatLng(lat, lng);	
+		$.ajax({
+			url : "/mapdata",
+			dataType : "json",
+			data : {
+				current_row : current_row,
+				gu_location : gu_location,
+				category : category
+			},
+			success : function(resp){
+				var location_data = resp.data;
+				console.log(location_data);					
+				for (var i = 0; i < location_data.length; i ++){		
+					$.each(location_data, function(i){
+						var academy_data = location_data[i];
+						neighborhoods.push({id: academy_data.id, title: academy_data.academy_name, latlng: academy_data.academy_latlng});
+					});
+					var academy_id = neighborhoods[i].id;						
+					var latlng = neighborhoods[i].latlng;
+					var split_latlng = latlng.split(",");
+					var lat = split_latlng[0];
+					var lng = split_latlng[1];
+					var marker_title = neighborhoods[i].title;
+					var marker_point = new google.maps.LatLng(lat, lng);	
 
-	// 				console.log(latlng, lat, lng, marker_title);
-	// 				addMarker();
-	// 			};
-	// 			var mapOptions = {
-	// 				zoom: 17,
-	// 				center: position_default,
-	// 				mapTypeId: google.maps.MapTypeId.ROADMAP
-	// 			};
+					console.log(latlng, lat, lng, marker_title);
+					addMarker();
+				};
+				var mapOptions = {
+					zoom: 17,
+					center: position_default,
+					mapTypeId: google.maps.MapTypeId.ROADMAP
+				};
 
-	// 			var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);				
-	// 		},
-	// 		error : function(){
-	// 			console.log('invalid response!. Server error!');
-	// 		} 
-	// 	});
-	// });	
+				var map = new google.maps.Map(document.getElementById('map-canvas'), mapOptions);				
+			},
+			error : function(){
+				console.log('invalid response!. Server error!');
+			} 
+		});
+	});	
 	
 	google.maps.event.addDomListener(window, 'load', initialize);
 
