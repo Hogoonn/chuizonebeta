@@ -1,4 +1,65 @@
-*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 14:56:36 2014] ***
+[pid: 3315|app: 0|req: 3/3] 61.33.61.151 () {36 vars in 618 bytes} [Fri Nov 28 07:10:23 2014] GET / => generated 10878 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 3315|app: 0|req: 4/4] 61.33.61.151 () {42 vars in 788 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/bootstrap/bootstrap.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 191 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 5/5] 61.33.61.151 () {42 vars in 805 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/fontawesome/css/font-awesome.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 6/6] 61.33.61.151 () {42 vars in 794 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/owlcarousel/owl.carousel.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 187 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 7/7] 61.33.61.151 () {42 vars in 789 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/owlcarousel/owl.theme.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 8/8] 61.33.61.151 () {42 vars in 806 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/magnific-popup/magnific-popup.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 9/9] 61.33.61.151 () {42 vars in 771 bytes} [Fri Nov 28 07:10:23 2014] GET /static/css/theme-elements.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 10/10] 61.33.61.151 () {42 vars in 753 bytes} [Fri Nov 28 07:10:23 2014] GET /static/css/theme.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 11/11] 61.33.61.151 () {42 vars in 762 bytes} [Fri Nov 28 07:10:23 2014] GET /static/css/theme-blog.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 12/12] 61.33.61.151 () {42 vars in 763 bytes} [Fri Nov 28 07:10:23 2014] GET /static/css/theme-shop.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 13/13] 61.33.61.151 () {42 vars in 769 bytes} [Fri Nov 28 07:10:23 2014] GET /static/css/theme-animate.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 14/14] 61.33.61.151 () {42 vars in 818 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/circle-flip-slideshow/css/component.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 15/15] 61.33.61.151 () {42 vars in 793 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/rs-plugin/css/settings.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 16/16] 61.33.61.151 () {42 vars in 768 bytes} [Fri Nov 28 07:10:23 2014] GET /static/css/skins/default.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 17/17] 61.33.61.151 () {42 vars in 752 bytes} [Fri Nov 28 07:10:23 2014] GET /static/css/custom.css => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 187 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 18/18] 61.33.61.151 () {42 vars in 769 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/modernizr/modernizr.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 19/19] 61.33.61.151 () {42 vars in 749 bytes} [Fri Nov 28 07:10:23 2014] GET /static/js/jquery.cookie.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 20/20] 61.33.61.151 () {42 vars in 758 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/jquery/jquery.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 21/21] 61.33.61.151 () {42 vars in 785 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/jquery.appear/jquery.appear.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 22/22] 61.33.61.151 () {42 vars in 784 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/jquery.easing/jquery.easing.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 23/23] 61.33.61.151 () {42 vars in 784 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/jquery-cookie/jquery-cookie.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 24/24] 61.33.61.151 () {42 vars in 770 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/bootstrap/bootstrap.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 25/25] 61.33.61.151 () {42 vars in 758 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/common/common.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 26/26] 61.33.61.151 () {42 vars in 801 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/jquery.validation/jquery.validation.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 27/27] 61.33.61.151 () {42 vars in 790 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/jquery.stellar/jquery.stellar.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 28/28] 61.33.61.151 () {42 vars in 817 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/jquery.easy-pie-chart/jquery.easy-pie-chart.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 29/29] 61.33.61.151 () {42 vars in 777 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/jquery.gmap/jquery.gmap.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 30/30] 61.33.61.151 () {42 vars in 764 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/twitterjs/twitter.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 31/31] 61.33.61.151 () {42 vars in 776 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/isotope/jquery.isotope.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 32/32] 61.33.61.151 () {42 vars in 780 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/owlcarousel/owl.carousel.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 33/33] 61.33.61.151 () {42 vars in 777 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/jflickrfeed/jflickrfeed.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 34/34] 61.33.61.151 () {42 vars in 804 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/magnific-popup/jquery.magnific-popup.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 35/35] 61.33.61.151 () {42 vars in 734 bytes} [Fri Nov 28 07:10:23 2014] GET /static/js/theme.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 36/36] 61.33.61.151 () {42 vars in 763 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/vide/jquery.vide.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 37/37] 61.33.61.151 () {42 vars in 812 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/rs-plugin/js/jquery.themepunch.tools.min.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 38/38] 61.33.61.151 () {42 vars in 823 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/rs-plugin/js/jquery.themepunch.revolution.min.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 191 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 39/39] 61.33.61.151 () {42 vars in 812 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/circle-flip-slideshow/js/jquery.flipshow.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 40/40] 61.33.61.151 () {42 vars in 753 bytes} [Fri Nov 28 07:10:23 2014] GET /static/js/views/view.home.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 41/41] 61.33.61.151 () {42 vars in 733 bytes} [Fri Nov 28 07:10:23 2014] GET /static/js/custom.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 187 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 42/42] 61.33.61.151 () {42 vars in 742 bytes} [Fri Nov 28 07:10:23 2014] GET /static/js/theme.init.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 43/43] 61.33.61.151 () {42 vars in 792 bytes} [Fri Nov 28 07:10:23 2014] GET /static/img/slides/slide-concept-2-1.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 44/44] 61.33.61.151 () {42 vars in 792 bytes} [Fri Nov 28 07:10:23 2014] GET /static/img/slides/slide-concept-2-4.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 45/45] 61.33.61.151 () {42 vars in 793 bytes} [Fri Nov 28 07:10:23 2014] GET /static/img/slides/slide-title-border.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 46/46] 61.33.61.151 () {42 vars in 792 bytes} [Fri Nov 28 07:10:23 2014] GET /static/img/slides/slide-concept-2-3.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 47/47] 61.33.61.151 () {42 vars in 792 bytes} [Fri Nov 28 07:10:23 2014] GET /static/img/slides/slide-concept-2-2.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 48/48] 61.33.61.151 () {42 vars in 793 bytes} [Fri Nov 28 07:10:23 2014] GET /static/img/slides/slide-concept-2-5.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 49/49] 61.33.61.151 () {42 vars in 785 bytes} [Fri Nov 28 07:10:23 2014] GET /static/img/slides/slide-concept.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 50/50] 61.33.61.151 () {42 vars in 871 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/fontawesome/fonts/fontawesome-webfont.woff?v=4.2.0 => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 190 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 51/51] 61.33.61.151 () {42 vars in 833 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/rs-plugin/assets/timer.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 52/52] 61.33.61.151 () {42 vars in 835 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/rs-plugin/assets/loader.gif => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 53/53] 61.33.61.151 () {42 vars in 846 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/rs-plugin/assets/large_right.png => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 54/54] 61.33.61.151 () {42 vars in 843 bytes} [Fri Nov 28 07:10:23 2014] GET /static/vendor/rs-plugin/assets/large_left.png => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 55/55] 61.33.61.151 () {40 vars in 729 bytes} [Fri Nov 28 07:10:25 2014] GET /mapnlist => generated 10122 bytes in 22 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 3315|app: 0|req: 56/56] 61.33.61.151 () {44 vars in 824 bytes} [Fri Nov 28 07:10:25 2014] GET /static/css/mapnlist.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 57/57] 61.33.61.151 () {44 vars in 805 bytes} [Fri Nov 28 07:10:25 2014] GET /static/js/mapnlist.js => generated 4344 bytes in 0 msecs via sendfile() (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 3315|app: 0|req: 58/58] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 07:10:25 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 3315|app: 0|req: 59/59] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 07:10:25 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 3315|app: 0|req: 60/60] 61.33.61.151 () {38 vars in 656 bytes} [Fri Nov 28 07:10:28 2014] GET /static/images/favicon.ico => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 3315|app: 0|req: 61/61] 61.33.61.151 () {42 vars in 852 bytes} [Fri Nov 28 07:10:33 2014] GET /mapdata?current_row%5B%5D=6&gu_location=kng&category=flower => generated 291 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+[pid: 3315|app: 0|req: 62/62] 61.33.61.151 () {40 vars in 855 bytes} [Fri Nov 28 07:10:33 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Ckng&searcher_2=flower => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 3315|app: 0|req: 63/63] 61.33.61.151 () {40 vars in 736 bytes} [Fri Nov 28 07:10:33 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 07:32:19 2014] ***
 compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
 os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
 nodename: ip-172-31-3-91
@@ -18,19 +79,32 @@ uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
 Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
 Set PythonHome to /home/ec2-user/chuizonebeta/venv
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0xcc5e50
+Python main interpreter initialized at 0x1a7fde0
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 145520 bytes (142 KB) for 1 cores
 *** Operational MODE: single process ***
-ImportError: No module named app
-unable to load app 0 (mountpoint='') (callable not found or import error)
-*** no app loaded. going in full dynamic mode ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1a7fde0 pid: 4135 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 7534)
-spawned uWSGI worker 1 (pid: 7535, cores: 1)
-Thu Oct 16 14:57:29 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
-*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 14:57:29 2014] ***
+spawned uWSGI master process (pid: 4135)
+spawned uWSGI worker 1 (pid: 4142, cores: 1)
+[pid: 4142|app: 0|req: 1/1] 61.33.61.151 () {38 vars in 707 bytes} [Fri Nov 28 07:32:29 2014] GET / => generated 10878 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4142|app: 0|req: 2/2] 61.33.61.151 () {44 vars in 838 bytes} [Fri Nov 28 07:32:29 2014] GET /static/js/jquery.cookie.js => generated 0 bytes in 4 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 4142|app: 0|req: 3/3] 61.33.61.151 () {38 vars in 658 bytes} [Fri Nov 28 07:32:30 2014] GET /favicon.ico => generated 233 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4142|app: 0|req: 4/4] 61.33.61.151 () {40 vars in 759 bytes} [Fri Nov 28 07:32:32 2014] GET /mapnlist => generated 10122 bytes in 23 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4142|app: 0|req: 5/5] 61.33.61.151 () {44 vars in 854 bytes} [Fri Nov 28 07:32:32 2014] GET /static/css/mapnlist.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 4142|app: 0|req: 6/6] 61.33.61.151 () {44 vars in 835 bytes} [Fri Nov 28 07:32:32 2014] GET /static/js/mapnlist.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 4142|app: 0|req: 7/7] 61.33.61.151 () {40 vars in 705 bytes} [Fri Nov 28 07:32:32 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4142|app: 0|req: 8/8] 61.33.61.151 () {40 vars in 705 bytes} [Fri Nov 28 07:32:32 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4142|app: 0|req: 9/9] 61.33.61.151 () {38 vars in 686 bytes} [Fri Nov 28 07:32:33 2014] GET /static/images/favicon.ico => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4142|app: 0|req: 10/10] 61.33.61.151 () {42 vars in 882 bytes} [Fri Nov 28 07:32:42 2014] GET /mapdata?current_row%5B%5D=6&gu_location=kng&category=flower => generated 291 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+[pid: 4142|app: 0|req: 11/11] 61.33.61.151 () {40 vars in 885 bytes} [Fri Nov 28 07:32:42 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Ckng&searcher_2=flower => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4142|app: 0|req: 12/12] 61.33.61.151 () {40 vars in 766 bytes} [Fri Nov 28 07:32:42 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4142|app: 0|req: 13/13] 61.33.61.151 () {42 vars in 931 bytes} [Fri Nov 28 07:32:49 2014] GET /mapdata?current_row%5B%5D=6&gu_location=all&category=all => generated 291 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+[pid: 4142|app: 0|req: 14/14] 61.33.61.151 () {40 vars in 934 bytes} [Fri Nov 28 07:32:49 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4142|app: 0|req: 15/15] 61.33.61.151 () {40 vars in 760 bytes} [Fri Nov 28 07:32:50 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Fri Nov 28 07:38:34 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 07:38:34 2014] ***
 compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
 os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
 nodename: ip-172-31-3-91
@@ -50,19 +124,37 @@ uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
 Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
 Set PythonHome to /home/ec2-user/chuizonebeta/venv
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x12a5de0
+Python main interpreter initialized at 0x2110de0
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 145520 bytes (142 KB) for 1 cores
 *** Operational MODE: single process ***
-ImportError: No module named app
-unable to load app 0 (mountpoint='') (callable not found or import error)
-*** no app loaded. going in full dynamic mode ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x2110de0 pid: 4189 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 7542)
-spawned uWSGI worker 1 (pid: 7543, cores: 1)
-Thu Oct 16 15:01:37 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
-*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 15:01:37 2014] ***
+spawned uWSGI master process (pid: 4189)
+spawned uWSGI worker 1 (pid: 4196, cores: 1)
+[pid: 4196|app: 0|req: 1/1] 61.33.61.151 () {38 vars in 680 bytes} [Fri Nov 28 07:38:55 2014] GET / => generated 10878 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 2/2] 61.33.61.151 () {40 vars in 729 bytes} [Fri Nov 28 07:39:15 2014] GET /mapnlist => generated 10122 bytes in 24 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 3/3] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 07:39:16 2014] GET /test => generated 233 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 4/4] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 07:39:16 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 5/5] 61.33.61.151 () {42 vars in 760 bytes} [Fri Nov 28 07:39:23 2014] GET /mapnlist => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 6/6] 61.33.61.151 () {46 vars in 847 bytes} [Fri Nov 28 07:39:24 2014] GET /static/js/jquery.cookie.js => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 4196|app: 0|req: 7/7] 61.33.61.151 () {46 vars in 855 bytes} [Fri Nov 28 07:39:24 2014] GET /static/css/mapnlist.css => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 4196|app: 0|req: 8/8] 61.33.61.151 () {46 vars in 836 bytes} [Fri Nov 28 07:39:24 2014] GET /static/js/mapnlist.js => generated 0 bytes in 0 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 4196|app: 0|req: 9/9] 61.33.61.151 () {42 vars in 706 bytes} [Fri Nov 28 07:39:24 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 10/10] 61.33.61.151 () {42 vars in 706 bytes} [Fri Nov 28 07:39:25 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 11/11] 61.33.61.151 () {38 vars in 656 bytes} [Fri Nov 28 07:39:28 2014] GET /static/images/favicon.ico => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 12/12] 61.33.61.151 () {42 vars in 852 bytes} [Fri Nov 28 07:39:34 2014] GET /mapdata?current_row%5B%5D=6&gu_location=kng&category=flower => generated 291 bytes in 6 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 13/13] 61.33.61.151 () {40 vars in 855 bytes} [Fri Nov 28 07:39:34 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Ckng&searcher_2=flower => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 14/14] 61.33.61.151 () {40 vars in 736 bytes} [Fri Nov 28 07:39:34 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 15/15] 61.33.61.151 () {38 vars in 694 bytes} [Fri Nov 28 07:39:51 2014] GET /mapdata => generated 291 bytes in 3 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 16/16] 61.33.61.151 () {38 vars in 631 bytes} [Fri Nov 28 07:39:51 2014] GET /favicon.ico => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 17/17] 61.33.61.151 () {38 vars in 631 bytes} [Fri Nov 28 07:39:52 2014] GET /favicon.ico => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 18/18] 61.33.61.151 () {42 vars in 901 bytes} [Fri Nov 28 07:40:23 2014] GET /mapdata?current_row%5B%5D=6&gu_location=all&category=all => generated 291 bytes in 3 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 19/19] 61.33.61.151 () {40 vars in 904 bytes} [Fri Nov 28 07:40:23 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4196|app: 0|req: 20/20] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 07:40:23 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Fri Nov 28 07:41:26 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 07:41:26 2014] ***
 compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
 os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
 nodename: ip-172-31-3-91
@@ -82,20 +174,18 @@ uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
 Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
 Set PythonHome to /home/ec2-user/chuizonebeta/venv
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x9c5de0
+Python main interpreter initialized at 0x8aade0
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 145520 bytes (142 KB) for 1 cores
 *** Operational MODE: single process ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x9c5de0 pid: 7568 (default app)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x8aade0 pid: 4202 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 7568)
-spawned uWSGI worker 1 (pid: 7573, cores: 1)
-[pid: 7573|app: 0|req: 1/1] 119.82.53.60 () {36 vars in 619 bytes} [Thu Oct 16 15:01:50 2014] GET / => generated 18 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
-[pid: 7573|app: 0|req: 2/2] 119.82.53.60 () {36 vars in 570 bytes} [Thu Oct 16 15:01:50 2014] GET /favicon.ico => generated 233 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
-[pid: 7573|app: 0|req: 3/3] 119.82.53.60 () {36 vars in 619 bytes} [Thu Oct 16 15:26:23 2014] GET / => generated 18 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
-Thu Oct 16 15:27:14 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
-*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 15:27:14 2014] ***
+spawned uWSGI master process (pid: 4202)
+spawned uWSGI worker 1 (pid: 4209, cores: 1)
+[pid: 4209|app: 0|req: 1/1] 61.33.61.151 () {38 vars in 691 bytes} [Fri Nov 28 07:41:36 2014] GET /mapdata => generated 291 bytes in 36 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+Fri Nov 28 07:43:17 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 07:43:17 2014] ***
 compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
 os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
 nodename: ip-172-31-3-91
@@ -115,21 +205,29 @@ uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
 Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
 Set PythonHome to /home/ec2-user/chuizonebeta/venv
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x1f08de0
+Python main interpreter initialized at 0x952de0
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 145520 bytes (142 KB) for 1 cores
 *** Operational MODE: single process ***
-WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1f08de0 pid: 30925 (default app)
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x952de0 pid: 4214 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 30925)
-spawned uWSGI worker 1 (pid: 30932, cores: 1)
-[pid: 30932|app: 0|req: 1/1] 119.82.53.60 () {38 vars in 650 bytes} [Thu Oct 16 15:27:19 2014] GET / => generated 31 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
-[pid: 30932|app: 0|req: 2/2] 119.82.53.60 () {38 vars in 650 bytes} [Thu Oct 16 15:28:18 2014] GET / => generated 31 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
-[pid: 30932|app: 0|req: 3/3] 119.82.53.60 () {36 vars in 618 bytes} [Thu Oct 16 15:36:48 2014] GET / => generated 31 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 79 bytes (1 switches on core 0)
-[pid: 30932|app: 0|req: 4/4] 119.82.53.60 () {36 vars in 569 bytes} [Thu Oct 16 15:36:49 2014] GET /favicon.ico => generated 233 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
-Thu Oct 16 16:34:43 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
-*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 16:34:43 2014] ***
+spawned uWSGI master process (pid: 4214)
+spawned uWSGI worker 1 (pid: 4221, cores: 1)
+[pid: 4221|app: 0|req: 1/1] 61.33.61.151 () {40 vars in 722 bytes} [Fri Nov 28 07:43:21 2014] GET /mapdata => generated 262 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4221|app: 0|req: 2/2] 61.33.61.151 () {38 vars in 689 bytes} [Fri Nov 28 07:43:46 2014] GET /mapdat => generated 233 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4221|app: 0|req: 3/3] 61.33.61.151 () {38 vars in 677 bytes} [Fri Nov 28 07:43:51 2014] GET / => generated 10878 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4221|app: 0|req: 4/4] 61.33.61.151 () {42 vars in 755 bytes} [Fri Nov 28 07:43:51 2014] GET /static/vendor/bootstrap/bootstrap.css.map => generated 233 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4221|app: 0|req: 5/5] 61.33.61.151 () {40 vars in 729 bytes} [Fri Nov 28 07:43:53 2014] GET /mapnlist => generated 10122 bytes in 22 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4221|app: 0|req: 6/6] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 07:43:53 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4221|app: 0|req: 7/7] 61.33.61.151 () {42 vars in 852 bytes} [Fri Nov 28 07:43:58 2014] GET /mapdata?current_row%5B%5D=6&gu_location=kng&category=flower => generated 262 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4221|app: 0|req: 8/8] 61.33.61.151 () {40 vars in 855 bytes} [Fri Nov 28 07:43:58 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Ckng&searcher_2=flower => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4221|app: 0|req: 9/9] 61.33.61.151 () {40 vars in 736 bytes} [Fri Nov 28 07:43:58 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4221|app: 0|req: 10/10] 61.33.61.151 () {42 vars in 901 bytes} [Fri Nov 28 07:44:05 2014] GET /mapdata?current_row%5B%5D=6&gu_location=all&category=all => generated 262 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4221|app: 0|req: 11/11] 61.33.61.151 () {40 vars in 904 bytes} [Fri Nov 28 07:44:05 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4221|app: 0|req: 12/12] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 07:44:05 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Fri Nov 28 07:47:12 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 07:47:12 2014] ***
 compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
 os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
 nodename: ip-172-31-3-91
@@ -149,28 +247,29 @@ uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
 Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
 Set PythonHome to /home/ec2-user/chuizonebeta/venv
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0xe83de0
+Python main interpreter initialized at 0x1225de0
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 145520 bytes (142 KB) for 1 cores
 *** Operational MODE: single process ***
-Traceback (most recent call last):
-  File "./app/__init__.py", line 19, in <module>
-    from app import views, models
-  File "./app/views.py", line 8, in <module>
-    from app.forms import AcademyForm
-ImportError: No module named forms
-unable to load app 0 (mountpoint='') (callable not found or import error)
-*** no app loaded. going in full dynamic mode ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1225de0 pid: 4282 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 31062)
-spawned uWSGI worker 1 (pid: 31067, cores: 1)
---- no python application found, check your startup logs for errors ---
-[pid: 31067|app: -1|req: -1/1] 66.249.82.56 () {38 vars in 635 bytes} [Thu Oct 16 16:34:50 2014] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
---- no python application found, check your startup logs for errors ---
-[pid: 31067|app: -1|req: -1/2] 119.82.53.60 () {36 vars in 618 bytes} [Thu Oct 16 16:34:52 2014] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
-Thu Oct 16 16:36:27 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
-*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 16:36:27 2014] ***
+spawned uWSGI master process (pid: 4282)
+spawned uWSGI worker 1 (pid: 4289, cores: 1)
+[pid: 4289|app: 0|req: 1/1] 61.33.61.151 () {38 vars in 677 bytes} [Fri Nov 28 07:47:18 2014] GET / => generated 10878 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4289|app: 0|req: 2/2] 61.33.61.151 () {38 vars in 693 bytes} [Fri Nov 28 07:47:24 2014] GET /mapnlist => generated 10122 bytes in 25 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4289|app: 0|req: 3/3] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 07:47:24 2014] GET /test => generated 233 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4289|app: 0|req: 4/4] 61.33.61.151 () {42 vars in 843 bytes} [Fri Nov 28 07:47:36 2014] GET /mapdata?current_row%5B%5D=6&gu_location=kng&category=all => generated 262 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4289|app: 0|req: 5/5] 61.33.61.151 () {40 vars in 846 bytes} [Fri Nov 28 07:47:36 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Ckng&searcher_2=all => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4289|app: 0|req: 6/6] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 07:47:36 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4289|app: 0|req: 7/7] 61.33.61.151 () {42 vars in 898 bytes} [Fri Nov 28 07:47:43 2014] GET /mapdata?current_row%5B%5D=6&gu_location=all&category=all => generated 262 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4289|app: 0|req: 8/8] 61.33.61.151 () {40 vars in 901 bytes} [Fri Nov 28 07:47:43 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4289|app: 0|req: 9/9] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 07:47:43 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4289|app: 0|req: 10/10] 61.33.61.151 () {42 vars in 898 bytes} [Fri Nov 28 07:47:52 2014] GET /mapdata?current_row%5B%5D=6&gu_location=all&category=all => generated 262 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4289|app: 0|req: 11/11] 61.33.61.151 () {40 vars in 901 bytes} [Fri Nov 28 07:47:52 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4289|app: 0|req: 12/12] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 07:47:52 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Fri Nov 28 07:49:19 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 07:49:19 2014] ***
 compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
 os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
 nodename: ip-172-31-3-91
@@ -190,34 +289,31 @@ uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
 Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
 Set PythonHome to /home/ec2-user/chuizonebeta/venv
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0x1b6ade0
+Python main interpreter initialized at 0x1569de0
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 145520 bytes (142 KB) for 1 cores
 *** Operational MODE: single process ***
-Traceback (most recent call last):
-  File "./app/__init__.py", line 19, in <module>
-    from app import views, models
-  File "./app/views.py", line 14, in <module>
-    @app.route('main')
-  File "/home/ec2-user/chuizonebeta/venv/lib/python2.6/site-packages/flask/app.py", line 1013, in decorator
-    self.add_url_rule(rule, endpoint, f, **options)
-  File "/home/ec2-user/chuizonebeta/venv/lib/python2.6/site-packages/flask/app.py", line 62, in wrapper_func
-    return f(self, *args, **kwargs)
-  File "/home/ec2-user/chuizonebeta/venv/lib/python2.6/site-packages/flask/app.py", line 976, in add_url_rule
-    rule = self.url_rule_class(rule, methods=methods, **options)
-  File "/home/ec2-user/chuizonebeta/venv/lib/python2.6/site-packages/werkzeug/routing.py", line 537, in __init__
-    raise ValueError('urls must start with a leading slash')
-ValueError: urls must start with a leading slash
-unable to load app 0 (mountpoint='') (callable not found or import error)
-*** no app loaded. going in full dynamic mode ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x1569de0 pid: 4294 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 31074)
-spawned uWSGI worker 1 (pid: 31081, cores: 1)
---- no python application found, check your startup logs for errors ---
-[pid: 31081|app: -1|req: -1/1] 119.82.53.60 () {38 vars in 649 bytes} [Thu Oct 16 16:36:33 2014] GET / => generated 21 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 83 bytes (0 switches on core 0)
-Thu Oct 16 16:38:36 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
-*** Starting uWSGI 2.0.7 (64bit) on [Thu Oct 16 16:38:36 2014] ***
+spawned uWSGI master process (pid: 4294)
+spawned uWSGI worker 1 (pid: 4301, cores: 1)
+[pid: 4301|app: 0|req: 1/1] 61.33.61.151 () {38 vars in 677 bytes} [Fri Nov 28 07:49:23 2014] GET / => generated 10878 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4301|app: 0|req: 2/2] 61.33.61.151 () {38 vars in 693 bytes} [Fri Nov 28 07:49:26 2014] GET /mapnlist => generated 10122 bytes in 24 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4301|app: 0|req: 3/3] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 07:49:26 2014] GET /test => generated 233 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4301|app: 0|req: 4/4] 61.33.61.151 () {40 vars in 724 bytes} [Fri Nov 28 07:49:32 2014] GET /mapnlist => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4301|app: 0|req: 5/5] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 07:49:32 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4301|app: 0|req: 6/6] 61.33.61.151 () {42 vars in 898 bytes} [Fri Nov 28 07:49:44 2014] GET /mapdata?current_row%5B%5D=6&gu_location=all&category=all => generated 262 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4301|app: 0|req: 7/7] 61.33.61.151 () {40 vars in 901 bytes} [Fri Nov 28 07:49:44 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4301|app: 0|req: 8/8] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 07:49:44 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4301|app: 0|req: 9/9] 61.33.61.151 () {42 vars in 898 bytes} [Fri Nov 28 07:49:50 2014] GET /mapdata?current_row%5B%5D=6&gu_location=all&category=all => generated 262 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4301|app: 0|req: 10/10] 61.33.61.151 () {40 vars in 901 bytes} [Fri Nov 28 07:49:50 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4301|app: 0|req: 11/11] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 07:49:50 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4301|app: 0|req: 12/12] 61.33.61.151 () {40 vars in 910 bytes} [Fri Nov 28 07:51:48 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=flower => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4301|app: 0|req: 13/13] 61.33.61.151 () {42 vars in 907 bytes} [Fri Nov 28 07:51:48 2014] GET /mapdata?current_row%5B%5D=6&gu_location=all&category=flower => generated 262 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4301|app: 0|req: 14/14] 61.33.61.151 () {40 vars in 736 bytes} [Fri Nov 28 07:51:48 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Fri Nov 28 07:55:43 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 07:55:43 2014] ***
 compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
 os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
 nodename: ip-172-31-3-91
@@ -237,15 +333,472 @@ uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
 Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
 Set PythonHome to /home/ec2-user/chuizonebeta/venv
 *** Python threads support is disabled. You can enable it with --enable-threads ***
-Python main interpreter initialized at 0xfa8de0
+Python main interpreter initialized at 0x1db2de0
 your server socket listen backlog is limited to 100 connections
 your mercy for graceful operations on workers is 60 seconds
 mapped 145520 bytes (142 KB) for 1 cores
 *** Operational MODE: single process ***
-WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xfa8de0 pid: 31090 (default app)
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x1db2de0 pid: 4312 (default app)
 *** uWSGI is running in multiple interpreter mode ***
-spawned uWSGI master process (pid: 31090)
-spawned uWSGI worker 1 (pid: 31097, cores: 1)
-[pid: 31097|app: 0|req: 1/1] 119.82.53.60 () {38 vars in 649 bytes} [Thu Oct 16 16:38:39 2014] GET / => generated 291 bytes in 15 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
-[pid: 31097|app: 0|req: 2/2] 119.82.53.60 () {38 vars in 649 bytes} [Thu Oct 16 16:40:28 2014] GET / => generated 291 bytes in 0 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
-[pid: 31097|app: 0|req: 3/3] 119.82.53.60 () {36 vars in 619 bytes} [Thu Oct 16 16:45:44 2014] GET / => generated 291 bytes in 1 msecs (HTTP/1.1 500) 2 headers in 84 bytes (1 switches on core 0)
+spawned uWSGI master process (pid: 4312)
+spawned uWSGI worker 1 (pid: 4319, cores: 1)
+[pid: 4319|app: 0|req: 1/1] 61.33.61.151 () {38 vars in 696 bytes} [Fri Nov 28 07:55:51 2014] GET /mapnlist => generated 10122 bytes in 31 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4319|app: 0|req: 2/2] 61.33.61.151 () {40 vars in 678 bytes} [Fri Nov 28 07:55:51 2014] GET /test => generated 233 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4319|app: 0|req: 3/3] 1.192.128.23 () {38 vars in 616 bytes} [Fri Nov 28 07:55:58 2014] GET /manager/html => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4319|app: 0|req: 4/4] 61.33.61.151 () {42 vars in 852 bytes} [Fri Nov 28 07:56:01 2014] GET /mapdata?current_row%5B%5D=6&gu_location=kng&category=flower => generated 262 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4319|app: 0|req: 5/5] 61.33.61.151 () {40 vars in 855 bytes} [Fri Nov 28 07:56:01 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Ckng&searcher_2=flower => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4319|app: 0|req: 6/6] 61.33.61.151 () {40 vars in 736 bytes} [Fri Nov 28 07:56:01 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4319|app: 0|req: 7/7] 61.33.61.151 () {42 vars in 901 bytes} [Fri Nov 28 07:56:07 2014] GET /mapdata?current_row%5B%5D=6&gu_location=all&category=all => generated 262 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4319|app: 0|req: 8/8] 61.33.61.151 () {40 vars in 904 bytes} [Fri Nov 28 07:56:07 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4319|app: 0|req: 9/9] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 07:56:07 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4319|app: 0|req: 10/10] 61.33.61.151 () {42 vars in 898 bytes} [Fri Nov 28 07:56:40 2014] GET /mapdata?current_row%5B%5D=6&gu_location=all&category=all => generated 262 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4319|app: 0|req: 11/11] 61.33.61.151 () {40 vars in 901 bytes} [Fri Nov 28 07:56:40 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10122 bytes in 3 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4319|app: 0|req: 12/12] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 07:56:40 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Fri Nov 28 07:57:50 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 07:57:50 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xf80de0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xf80de0 pid: 4324 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4324)
+spawned uWSGI worker 1 (pid: 4331, cores: 1)
+[pid: 4331|app: 0|req: 1/1] 61.33.61.151 () {42 vars in 901 bytes} [Fri Nov 28 07:57:55 2014] GET /mapdata?current_row%5B%5D=6&gu_location=all&category=all => generated 291 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4331|app: 0|req: 2/2] 61.33.61.151 () {40 vars in 904 bytes} [Fri Nov 28 07:57:55 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10122 bytes in 24 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4331|app: 0|req: 3/3] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 07:57:56 2014] GET /test => generated 233 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4331|app: 0|req: 4/4] 61.33.61.151 () {42 vars in 904 bytes} [Fri Nov 28 07:58:07 2014] GET /mapdata?current_row%5B%5D=6&gu_location=kng&category=craft => generated 291 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4331|app: 0|req: 5/5] 61.33.61.151 () {40 vars in 907 bytes} [Fri Nov 28 07:58:07 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Ckng&searcher_2=craft => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4331|app: 0|req: 6/6] 61.33.61.151 () {40 vars in 734 bytes} [Fri Nov 28 07:58:07 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Fri Nov 28 07:59:56 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 07:59:56 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xf0ade0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xf0ade0 pid: 4336 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4336)
+spawned uWSGI worker 1 (pid: 4343, cores: 1)
+[pid: 4343|app: 0|req: 1/1] 61.33.61.151 () {42 vars in 938 bytes} [Fri Nov 28 08:00:02 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Ckng&searcher_2=craft => generated 10122 bytes in 33 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4343|app: 0|req: 2/2] 61.33.61.151 () {46 vars in 914 bytes} [Fri Nov 28 08:00:02 2014] GET /static/css/mapnlist.css => generated 0 bytes in 2 msecs (HTTP/1.1 304) 4 headers in 188 bytes (0 switches on core 0)
+[pid: 4343|app: 0|req: 3/3] 61.33.61.151 () {46 vars in 895 bytes} [Fri Nov 28 08:00:02 2014] GET /static/js/mapnlist.js => generated 4273 bytes in 1 msecs via sendfile() (HTTP/1.1 200) 7 headers in 286 bytes (0 switches on core 0)
+[pid: 4343|app: 0|req: 4/4] 61.33.61.151 () {42 vars in 765 bytes} [Fri Nov 28 08:00:02 2014] GET /test => generated 233 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4343|app: 0|req: 5/5] 61.33.61.151 () {46 vars in 906 bytes} [Fri Nov 28 08:00:02 2014] GET /static/js/jquery.cookie.js => generated 0 bytes in 1 msecs (HTTP/1.1 304) 4 headers in 189 bytes (0 switches on core 0)
+[pid: 4343|app: 0|req: 6/6] 61.33.61.151 () {42 vars in 765 bytes} [Fri Nov 28 08:00:03 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4343|app: 0|req: 7/7] 61.33.61.151 () {38 vars in 679 bytes} [Fri Nov 28 08:00:06 2014] GET / => generated 10878 bytes in 6 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4343|app: 0|req: 8/8] 61.33.61.151 () {42 vars in 757 bytes} [Fri Nov 28 08:00:07 2014] GET /static/vendor/bootstrap/bootstrap.css.map => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4343|app: 0|req: 9/9] 61.33.61.151 () {40 vars in 729 bytes} [Fri Nov 28 08:00:08 2014] GET /mapnlist => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4343|app: 0|req: 10/10] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:00:08 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4343|app: 0|req: 11/11] 61.33.61.151 () {40 vars in 852 bytes} [Fri Nov 28 08:00:15 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Ckng&searcher_2=flower => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4343|app: 0|req: 12/12] 61.33.61.151 () {40 vars in 733 bytes} [Fri Nov 28 08:00:16 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4343|app: 0|req: 13/13] 61.33.61.151 () {40 vars in 904 bytes} [Fri Nov 28 08:01:07 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4343|app: 0|req: 14/14] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 08:01:07 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Fri Nov 28 08:01:36 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 08:01:36 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x7ecde0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x7ecde0 pid: 4359 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4359)
+spawned uWSGI worker 1 (pid: 4366, cores: 1)
+[pid: 4366|app: 0|req: 1/1] 61.33.61.151 () {38 vars in 693 bytes} [Fri Nov 28 08:01:42 2014] GET /mapnlist => generated 10122 bytes in 31 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4366|app: 0|req: 2/2] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:01:42 2014] GET /test => generated 233 bytes in 8 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4366|app: 0|req: 3/3] 61.33.61.151 () {40 vars in 852 bytes} [Fri Nov 28 08:01:48 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Ckng&searcher_2=flower => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4366|app: 0|req: 4/4] 61.33.61.151 () {40 vars in 733 bytes} [Fri Nov 28 08:01:48 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Fri Nov 28 08:02:42 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 08:02:42 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x20abde0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x20abde0 pid: 4371 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4371)
+spawned uWSGI worker 1 (pid: 4378, cores: 1)
+[pid: 4378|app: 0|req: 1/1] 61.33.61.151 () {38 vars in 677 bytes} [Fri Nov 28 08:02:47 2014] GET / => generated 10878 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4378|app: 0|req: 2/2] 61.33.61.151 () {42 vars in 755 bytes} [Fri Nov 28 08:02:47 2014] GET /static/vendor/bootstrap/bootstrap.css.map => generated 233 bytes in 11 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4378|app: 0|req: 3/3] 61.33.61.151 () {40 vars in 729 bytes} [Fri Nov 28 08:02:49 2014] GET /mapnlist => generated 10122 bytes in 22 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4378|app: 0|req: 4/4] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:02:50 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4378|app: 0|req: 5/5] 61.33.61.151 () {40 vars in 846 bytes} [Fri Nov 28 08:02:53 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4378|app: 0|req: 6/6] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 08:02:53 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4378|app: 0|req: 7/7] 61.33.61.151 () {40 vars in 901 bytes} [Fri Nov 28 08:03:02 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10122 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4378|app: 0|req: 8/8] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 08:03:02 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4378|app: 0|req: 9/9] 61.33.61.151 () {38 vars in 693 bytes} [Fri Nov 28 08:04:58 2014] GET /mapnlist => generated 10127 bytes in 12 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4378|app: 0|req: 10/10] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:04:59 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4378|app: 0|req: 11/11] 61.33.61.151 () {40 vars in 846 bytes} [Fri Nov 28 08:05:03 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10127 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4378|app: 0|req: 12/12] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 08:05:04 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Fri Nov 28 08:05:58 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 08:05:58 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x781de0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x781de0 pid: 4383 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4383)
+spawned uWSGI worker 1 (pid: 4390, cores: 1)
+[pid: 4390|app: 0|req: 1/1] 61.33.61.151 () {38 vars in 693 bytes} [Fri Nov 28 08:06:03 2014] GET /mapnlist => generated 10127 bytes in 33 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4390|app: 0|req: 2/2] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:06:03 2014] GET /test => generated 233 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4390|app: 0|req: 3/3] 61.33.61.151 () {40 vars in 724 bytes} [Fri Nov 28 08:07:35 2014] GET /mapnlist => generated 10127 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4390|app: 0|req: 4/4] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:07:35 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4390|app: 0|req: 5/5] 61.33.61.151 () {38 vars in 693 bytes} [Fri Nov 28 08:07:47 2014] GET /mapnlist => generated 10127 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4390|app: 0|req: 6/6] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:07:48 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4390|app: 0|req: 7/7] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:07:48 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4390|app: 0|req: 8/8] 61.33.61.151 () {40 vars in 852 bytes} [Fri Nov 28 08:07:53 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Ckng&searcher_2=flower => generated 10127 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4390|app: 0|req: 9/9] 61.33.61.151 () {40 vars in 733 bytes} [Fri Nov 28 08:07:54 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4390|app: 0|req: 10/10] 61.33.61.151 () {40 vars in 904 bytes} [Fri Nov 28 08:08:14 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10127 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4390|app: 0|req: 11/11] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 08:08:14 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4390|app: 0|req: 12/12] 61.33.61.151 () {40 vars in 901 bytes} [Fri Nov 28 08:08:42 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10127 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4390|app: 0|req: 13/13] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 08:08:43 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Fri Nov 28 08:09:01 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 08:09:01 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xfcbde0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xfcbde0 pid: 4395 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4395)
+spawned uWSGI worker 1 (pid: 4402, cores: 1)
+[pid: 4402|app: 0|req: 1/1] 61.33.61.151 () {38 vars in 706 bytes} [Fri Nov 28 08:10:16 2014] GET / => generated 10878 bytes in 13 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4402|app: 0|req: 2/2] 61.33.61.151 () {40 vars in 758 bytes} [Fri Nov 28 08:10:18 2014] GET /mapnlist => generated 10127 bytes in 25 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4402|app: 0|req: 3/3] 61.33.61.151 () {40 vars in 704 bytes} [Fri Nov 28 08:10:18 2014] GET /test => generated 233 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4402|app: 0|req: 4/4] 61.33.61.151 () {40 vars in 704 bytes} [Fri Nov 28 08:10:19 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4402|app: 0|req: 5/5] 61.33.61.151 () {38 vars in 693 bytes} [Fri Nov 28 08:12:33 2014] GET /mapnlist => generated 10127 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4402|app: 0|req: 6/6] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:12:33 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4402|app: 0|req: 7/7] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:12:35 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4402|app: 0|req: 8/8] 61.33.61.151 () {38 vars in 656 bytes} [Fri Nov 28 08:12:38 2014] GET /static/images/favicon.ico => generated 233 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4402|app: 0|req: 9/9] 61.33.61.151 () {40 vars in 846 bytes} [Fri Nov 28 08:12:55 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10127 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4402|app: 0|req: 10/10] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 08:12:56 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Fri Nov 28 08:14:57 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 08:14:57 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0xf30de0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0xf30de0 pid: 4454 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4454)
+spawned uWSGI worker 1 (pid: 4461, cores: 1)
+[pid: 4461|app: 0|req: 1/1] 61.33.61.151 () {38 vars in 693 bytes} [Fri Nov 28 08:17:04 2014] GET /mapnlist => generated 10127 bytes in 32 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4461|app: 0|req: 2/2] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:17:04 2014] GET /test => generated 233 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4461|app: 0|req: 3/3] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:17:04 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4461|app: 0|req: 4/4] 61.33.61.151 () {38 vars in 691 bytes} [Fri Nov 28 08:17:08 2014] GET /mapdata => generated 291 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4461|app: 0|req: 5/5] 61.33.61.151 () {38 vars in 628 bytes} [Fri Nov 28 08:17:09 2014] GET /favicon.ico => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4461|app: 0|req: 6/6] 61.33.61.151 () {38 vars in 628 bytes} [Fri Nov 28 08:17:09 2014] GET /favicon.ico => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+Fri Nov 28 08:18:59 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 08:18:59 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x18e3de0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x18e3de0 pid: 4517 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4517)
+spawned uWSGI worker 1 (pid: 4524, cores: 1)
+[pid: 4524|app: 0|req: 1/1] 61.33.61.151 () {40 vars in 722 bytes} [Fri Nov 28 08:19:03 2014] GET /mapdata => generated 262 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+Fri Nov 28 08:21:44 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 08:21:44 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x14c0de0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x14c0de0 pid: 4529 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4529)
+spawned uWSGI worker 1 (pid: 4536, cores: 1)
+[pid: 4536|app: 0|req: 1/1] 61.33.61.151 () {40 vars in 722 bytes} [Fri Nov 28 08:21:51 2014] GET /mapdata => generated 291 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+Fri Nov 28 08:22:59 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 08:22:59 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x9bade0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x9bade0 pid: 4541 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4541)
+spawned uWSGI worker 1 (pid: 4548, cores: 1)
+[pid: 4548|app: 0|req: 1/1] 61.33.61.151 () {40 vars in 722 bytes} [Fri Nov 28 08:23:02 2014] GET /mapdata => generated 308 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+Fri Nov 28 08:23:31 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 08:23:31 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x166dde0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 1 seconds on interpreter 0x166dde0 pid: 4553 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4553)
+spawned uWSGI worker 1 (pid: 4560, cores: 1)
+[pid: 4560|app: 0|req: 1/1] 61.33.61.151 () {40 vars in 722 bytes} [Fri Nov 28 08:23:36 2014] GET /mapdata => generated 320 bytes in 8 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4560|app: 0|req: 2/2] 61.33.61.151 () {40 vars in 722 bytes} [Fri Nov 28 08:25:43 2014] GET /mapdata => generated 328 bytes in 2 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+[pid: 4560|app: 0|req: 3/3] 61.33.61.151 () {40 vars in 722 bytes} [Fri Nov 28 08:26:25 2014] GET /mapdata => generated 328 bytes in 0 msecs (HTTP/1.1 200) 2 headers in 80 bytes (1 switches on core 0)
+Fri Nov 28 08:26:32 2014 - uWSGI worker 1 screams: UAAAAAAH my master disconnected: i will kill myself !!!
+*** Starting uWSGI 2.0.7 (64bit) on [Fri Nov 28 08:26:32 2014] ***
+compiled with version: 4.8.2 20140120 (Red Hat 4.8.2-16) on 16 October 2014 14:35:45
+os: Linux-3.14.19-17.43.amzn1.x86_64 #1 SMP Wed Sep 17 22:14:52 UTC 2014
+nodename: ip-172-31-3-91
+machine: x86_64
+clock source: unix
+detected number of CPU cores: 1
+current working directory: /home/ec2-user/chuizonebeta
+writing pidfile to /home/ec2-user/chuizonebeta/mypid.pid
+detected binary path: /usr/bin/uwsgi
+!!! no internal routing support, rebuild with pcre support !!!
+your processes number limit is 7844
+your memory page size is 4096 bytes
+detected max file descriptor number: 1024
+lock engine: pthread robust mutexes
+thunder lock: disabled (you can enable it with --thunder-lock)
+uwsgi socket 0 bound to UNIX address /home/ec2-user/chuizonebeta/uwsgi.sock fd 3
+Python version: 2.6.9 (unknown, Sep 13 2014, 00:25:11)  [GCC 4.8.2 20140120 (Red Hat 4.8.2-16)]
+Set PythonHome to /home/ec2-user/chuizonebeta/venv
+*** Python threads support is disabled. You can enable it with --enable-threads ***
+Python main interpreter initialized at 0x116fde0
+your server socket listen backlog is limited to 100 connections
+your mercy for graceful operations on workers is 60 seconds
+mapped 145520 bytes (142 KB) for 1 cores
+*** Operational MODE: single process ***
+WSGI app 0 (mountpoint='') ready in 0 seconds on interpreter 0x116fde0 pid: 4565 (default app)
+*** uWSGI is running in multiple interpreter mode ***
+spawned uWSGI master process (pid: 4565)
+spawned uWSGI worker 1 (pid: 4572, cores: 1)
+[pid: 4572|app: 0|req: 1/1] 61.33.61.151 () {40 vars in 722 bytes} [Fri Nov 28 08:26:35 2014] GET /mapdata => generated 50547 bytes in 17 msecs (HTTP/1.1 200) 2 headers in 74 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 2/2] 61.33.61.151 () {38 vars in 677 bytes} [Fri Nov 28 08:30:50 2014] GET / => generated 10878 bytes in 10 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 3/3] 61.33.61.151 () {38 vars in 628 bytes} [Fri Nov 28 08:30:53 2014] GET /favicon.ico => generated 233 bytes in 9 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 4/4] 61.33.61.151 () {38 vars in 693 bytes} [Fri Nov 28 08:30:57 2014] GET /mapnlist => generated 10127 bytes in 17 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 5/5] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:30:57 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 6/6] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:30:57 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 7/7] 61.33.61.151 () {38 vars in 656 bytes} [Fri Nov 28 08:30:58 2014] GET /static/images/favicon.ico => generated 233 bytes in 1 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 8/8] 61.33.61.151 () {40 vars in 846 bytes} [Fri Nov 28 08:31:27 2014] GET /mapnlist?searcher_1=37.497962%2C127.027610%2Call&searcher_2=all => generated 10127 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 9/9] 61.33.61.151 () {40 vars in 730 bytes} [Fri Nov 28 08:31:28 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 10/10] 61.33.61.151 () {38 vars in 693 bytes} [Fri Nov 28 08:44:00 2014] GET /mapnlist => generated 10127 bytes in 4 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 11/11] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:44:00 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 12/12] 61.33.61.151 () {40 vars in 675 bytes} [Fri Nov 28 08:44:00 2014] GET /test => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 13/13] 117.21.225.165 () {34 vars in 455 bytes} [Fri Nov 28 12:50:21 2014] GET /manager/html => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 14/14] 157.55.39.83 () {40 vars in 536 bytes} [Fri Nov 28 13:42:16 2014] GET / => generated 10878 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 82 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 15/15] 54.162.147.172 () {30 vars in 381 bytes} [Fri Nov 28 15:09:33 2014] HEAD / => generated 0 bytes in 1 msecs (HTTP/1.1 200) 2 headers in 82 bytes (0 switches on core 0)
+[pid: 4572|app: 0|req: 16/16] 54.162.147.172 () {30 vars in 424 bytes} [Fri Nov 28 15:09:33 2014] GET /clientaccesspolicy.xml => generated 233 bytes in 0 msecs (HTTP/1.1 404) 2 headers in 72 bytes (1 switches on core 0)
+[pid: 4572|app: 0|req: 17/17] 82.117.208.243 () {28 vars in 344 bytes} [Fri Nov 28 15:10:06 2014] GET / => generated 10878 bytes in 0 msecs (HTTP/1.0 200) 2 headers in 82 bytes (1 switches on core 0)
